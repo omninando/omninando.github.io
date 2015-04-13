@@ -12,14 +12,18 @@ body {
 
 h1 {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
-	font-size: 36px;
-	font-weight: normal;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+    
 }
 
 h2 {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
-	font-size: 28px;
-	font-weight: normal;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #bebebe;
 }
 
 h3 {
@@ -47,7 +51,8 @@ h6 {
 }
 
 p {
-	margin-bottom: 1em;
+	font-family: "Merriweather", Arial, serif;
+	color: #555;	
 }
 
 .btn-primary.disabled,
@@ -68,13 +73,6 @@ fieldset[disabled] .btn-primary.active {
 	background-color: transparent;
 }
 
-.well {
-	background: url(..img/); transparent;
-	border: none;
-
-}
-
-
 /* ==========================================================================
    HEADER
    ========================================================================== */
@@ -94,10 +92,17 @@ fieldset[disabled] .btn-primary.active {
 	font-family: "Lato", Arial;
 	font-weight: 100;
 	font-size: 40px;
+	transition: color 0.4s ease;
 	background: none;
 	padding-left: 50px;
 }
 
+.navbar-default .navbar-brand:hover{
+	color: #aaa;
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+
+}
 
 .navbar-inner {
 	text-transform: uppercase;
@@ -117,11 +122,13 @@ fieldset[disabled] .btn-primary.active {
 	letter-spacing: 1px;
 	opacity: 0.65;
 	filter: alpha(opacity=65);
+	transition: color 0.4s ease;
 	display: block;
 	background: rgba(255,255,255,0);
 }
 
 .navbar .nav li a:hover {
+	color: #aaa;
 	opacity: 0.90;
 	filter: alpha(opacity=90);
 }
@@ -158,28 +165,62 @@ fieldset[disabled] .btn-primary.active {
 	text-align: center;
 }
 
+
 .feature {
-  background: url(../img/bg5.png) no-repeat fixed center;
-  background-size: cover;
-  padding-top: 200px;
-  height: 800px;
+	background: url(../img/bg5.png) no-repeat fixed center;
+	background-size: cover;
+	padding-top: 200px;
+	height: 800px;
 }
 
 .who {
-
+	position: relative;
+	background: url(../img/struckaxiom.png) repeat center;
+	background-size: 50px;
+	padding-top: 50px;
+	height: 300px;
+	background-position-y: 39px;
+	background-position-y: 2.4375rem;
+	font-size: 1.3em;
 }
 
 .how {
-
+	position: relative;
+	background: #ffffff url(../img/flat-ui.png) no-repeat fixed center;
+	padding-top: 100px;
+	height: 300px;
+	background-position-y: 39px;
+	background-position-y: 2.4375rem;
+	margin: transparent;
+	margin-bottom: 200px;
 }
 
+.how h2 {
+	color: #555;
+}
 
+.work {
+	position: relative;
+	background: #fff;
+	background-size: 50px;
+	padding-top: 100px;
+	height: 400px;
+	background-position-y: 39px;
+	background-position-y: 2.4375rem;
+	font-size: 1.3em;
+}
+
+.well {
+	background: transparent;
+	border: none; 
+	box-shadow: none;
+}
 
 .headline {
     font-family: "Lato", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 100;
     font-size: 8em;
-    line-height: .9em;
+    line-height: .5em;
     letter-spacing: .05em;
     text-transform: uppercase;
     text-align: center;
@@ -188,21 +229,58 @@ fieldset[disabled] .btn-primary.active {
     right: 0;
     margin-top: 80px; margin-top: 21.875r em;
 }
+.headline2 {
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 8em;
+    line-height: .1em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin-top: 80px; margin-top: 21.875r em;
+}
+
 
 /* ==========================================================================
 	FOOTER
    ========================================================================== */
 
 .footer {
-	padding: 30px 0px 0px 0px; 
-	background-color: #555555;
+	height: 100px; height: 6.25rem;
+	background: #272727 url(../img/twinkle_twinkle.png) repeat;
+	background-size: 50px;
+	background-position-y: 39px;
+	background-position-y: 2.4375rem;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: .8125em;
+	font-weight: 400;
+	opacity: 1;
+	text-transform: uppercase;
+	line-height: 100px; line-height: 6.25rem;
+	color: #333;
+	text-align: center;
 }
 
-.footer h4 {
-	color: #ffffff;
+.footer a {
+	text-decoration: none;
+	color: #333;
+	transition: color 0.2s ease;
 }
 
+.footer a:hover {
+	color: #318ec3;
+}
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
 
 
 /* ==========================================================================
@@ -217,15 +295,29 @@ fieldset[disabled] .btn-primary.active {
 	.right {
 		float: right;
 	}
+	
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
+	
 	.headline {
 		font-size: 6em;
 		text-align: center;
 		left: 0;
     	right: 0;
     }	
+	.headline2 {
+	    font-size: 6em;
+	    text-align: center;
+	    left: 0;
+	    right: 0;
+	}
+
+	.who {
+		font-size: 1.2em;
+	}
+
+
 }
 
 @media (max-width: 768px){
@@ -237,27 +329,60 @@ fieldset[disabled] .btn-primary.active {
 		background: none;
 		padding-left: 10px; 
 	}
+	
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
+
 	.headline {
 		font-size: 5em;
 		text-align: center;
 		left: 0;
     	right: 0;
 	}	
+	
+	.headline2 {
+	    font-size: 5em;
+	    text-align: center;
+	    left: 0;
+	    right: 0;
+	}
+	
+	.who {
+		font-size: 1.1em;
+	}
+
+	.how {
+		height: 600px;
+	}
 }
 
 @media (max-width: 640px){
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
+	
 	.headline {
 		font-size: 4em;
 		text-align: center;
 		left: 0;
     	right: 0;    
 	}	
+	
+	.headline2 {
+	    font-size: 4em;
+	    text-align: center;
+	    left: 0;
+	    right: 0;
+	}
+	
+	.who {
+		font-size: 1.0em;
+	}
+
+	.how {
+		height: 600px;
+	}
 }
 
 @media (max-width: 480px){
@@ -265,10 +390,26 @@ fieldset[disabled] .btn-primary.active {
 		font-size: 20px;
 		font-weight: 300;
 	}
+
 	.headline {
 		font-size: 4em;
 		text-align: center;
 		left: 0;
     	right: 0;    
-	}	
+	}
+	
+	.headline2 {
+	    font-size: 4em;
+	    text-align: center;
+	    left: 0;
+	    right: 0;
+	}
+	
+	.who {
+		font-size: 0.9em;
+	}
+
+	.how {
+		height: 900px;
+	}
 }
