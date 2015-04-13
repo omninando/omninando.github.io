@@ -321,6 +321,10 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media (max-width: 768px){
+	.navbar-inner {
+		padding-top: 0;
+	}
+
 	.navbar-default .navbar-brand{
 		color: #fff;
 		font-family: "Lato", Arial;
@@ -358,6 +362,10 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media (max-width: 640px){
+	.navbar-inner {
+		padding-top: 0;
+	}
+
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
@@ -386,9 +394,19 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media (max-width: 480px){
+	.navbar-inner {
+		padding-top: 0;
+	}
+
 	.navbar-default .navbar-brand{
+		
 		font-size: 20px;
 		font-weight: 300;
+	}
+
+	.feature {
+		background-size: 1250px;
+		padding-top: 150px;
 	}
 
 	.headline {
