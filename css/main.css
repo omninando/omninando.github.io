@@ -244,3 +244,15 @@ fieldset[disabled] .btn-primary.active {
     	right: 0;    
 	}	
 }
+
+@media (max-width: 480px){
+	.navbar-default .navbar-brand{
+		font-size: 20px;
+	}
+	.headline {
+		font-size: 4em;
+		text-align: center;
+		left: 0;
+    	right: 0;    
+	}	
+}
