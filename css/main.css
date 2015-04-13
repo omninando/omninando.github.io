@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  	background: #424b51;
+	  background: #424b51;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 	font-size: 50px;
 	font-weight: bold;
 	text-transform: uppercase;
-    
+
 }
 
 h2 {
@@ -24,6 +24,8 @@ h2 {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #bebebe;
+	padding-bottom: 50px;
+
 }
 
 h3 {
@@ -52,7 +54,7 @@ h6 {
 
 p {
 	font-family: "Merriweather", Arial, serif;
-	color: #555;	
+	color: #555;
 }
 
 .btn-primary.disabled,
@@ -165,7 +167,6 @@ fieldset[disabled] .btn-primary.active {
 	text-align: center;
 }
 
-
 .feature {
 	background: url(../img/bg5.jpg) no-repeat fixed center;
 	background-size: cover;
@@ -173,12 +174,42 @@ fieldset[disabled] .btn-primary.active {
 	height: 800px;
 }
 
+.headline {
+	font-family: "Lato", Arial, sans-serif;
+	font-weight: 100;
+	font-size: 8em;
+	line-height: .5em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	left: 0;
+	right: 0;
+	margin-top: 80px;
+}
+
+.headline2 {
+	padding-left: 30px;
+	font-family: "Lato", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 8em;
+	line-height: .1em;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	left: 0;
+	right: 0;
+	margin-top: 80px;
+}
+
 .who {
 	position: relative;
 	background: url(../img/struckaxiom.png) repeat center;
-	background-size: 50px;
-	padding-top: 50px;
-	height: 300px;
+	background-position: right;
+	background-size: 80px;
+	padding: 50px;
+	height: auto;
 	background-position-y: 39px;
 	background-position-y: 2.4375rem;
 	font-size: 1.3em;
@@ -186,14 +217,13 @@ fieldset[disabled] .btn-primary.active {
 
 .how {
 	position: relative;
-	background: #ffffff url(../img/flat-ui.png) no-repeat fixed center;
-	padding-top: 100px;
-	height: 300px;
+	background: #ffffff url(../img/how.jpg) no-repeat fixed center;
+	padding-top: 50px;
+	height: auto;
 	background-position-y: 39px;
 	background-position-y: 2.4375rem;
 	margin: transparent;
-	margin-bottom: 200px;
-}
+	}
 
 .how h2 {
 	color: #555;
@@ -212,36 +242,33 @@ fieldset[disabled] .btn-primary.active {
 
 .well {
 	background: transparent;
-	border: none; 
+	border: none;
 	box-shadow: none;
+	text-align: center;
 }
 
-.headline {
-    font-family: "Lato", Arial, sans-serif;
-    font-weight: 100;
-    font-size: 8em;
-    line-height: .5em;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    left: 0;
-    right: 0;
-    margin-top: 80px; margin-top: 21.875r em;
+.research.well{
+	margin-left: 50px;
 }
-.headline2 {
-    font-family: "Lato", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 8em;
-    line-height: .1em;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    left: 0;
-    right: 0;
-    margin-top: 80px; margin-top: 21.875r em;
+
+.well {
+	padding: 250px 0 145px 0; padding: 13.375rem 0 10.0625rem 0;
 }
+h2 {
+}
+.research {
+	background: url("../img/ven.png") no-repeat center top;
+}
+
+.design {
+	background: url("../img/rectangle.png") no-repeat center top;
+}
+
+.refine {
+	background: url("../img/triangle.png") no-repeat center top;
+}
+
+
 
 
 /* ==========================================================================
@@ -288,36 +315,30 @@ fieldset[disabled] .btn-primary.active {
    ========================================================================== */
 
 @media (max-width: 992px){
-	.left {
-		float: left;
-	}
-
-	.right {
-		float: right;
-	}
-	
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
-	
+
 	.headline {
 		font-size: 6em;
 		text-align: center;
 		left: 0;
-    	right: 0;
-    }	
+		right: 0;
+	}
 	.headline2 {
-	    font-size: 6em;
-	    text-align: center;
-	    left: 0;
-	    right: 0;
+		font-size: 6em;
+		text-align: center;
+		left: 0;
+		right: 0;
 	}
 
 	.who {
 		font-size: 1.2em;
 	}
 
-
+	.how {
+		height: auto;
+	}
 }
 
 @media (max-width: 768px){
@@ -331,9 +352,9 @@ fieldset[disabled] .btn-primary.active {
 		font-weight: 100;
 		font-size: 40px;
 		background: none;
-		padding-left: 10px; 
+		padding-left: 10px;
 	}
-	
+
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
@@ -342,16 +363,16 @@ fieldset[disabled] .btn-primary.active {
 		font-size: 5em;
 		text-align: center;
 		left: 0;
-    	right: 0;
-	}	
-	
-	.headline2 {
-	    font-size: 5em;
-	    text-align: center;
-	    left: 0;
-	    right: 0;
+		right: 0;
 	}
-	
+
+	.headline2 {
+		font-size: 5em;
+		text-align: center;
+		left: 0;
+		right: 0;
+	}
+
 	.who {
 		font-size: 1.1em;
 	}
@@ -369,27 +390,27 @@ fieldset[disabled] .btn-primary.active {
 	.navbar-default .navbar-brand{
 		font-size: 28px;
 	}
-	
+
 	.headline {
 		font-size: 4em;
 		text-align: center;
 		left: 0;
-    	right: 0;    
-	}	
-	
-	.headline2 {
-	    font-size: 4em;
-	    text-align: center;
-	    left: 0;
-	    right: 0;
+		right: 0;
 	}
-	
+
+	.headline2 {
+		font-size: 4em;
+		text-align: center;
+		left: 0;
+		right: 0;
+	}
+
 	.who {
 		font-size: 1.0em;
 	}
 
 	.how {
-		height: 600px;
+		height: auto;
 	}
 }
 
@@ -399,7 +420,7 @@ fieldset[disabled] .btn-primary.active {
 	}
 
 	.navbar-default .navbar-brand{
-		
+
 		font-size: 20px;
 		font-weight: 300;
 	}
@@ -413,21 +434,29 @@ fieldset[disabled] .btn-primary.active {
 		font-size: 4em;
 		text-align: center;
 		left: 0;
-    	right: 0;    
+		right: 0;
 	}
-	
+
 	.headline2 {
-	    font-size: 4em;
-	    text-align: center;
-	    left: 0;
-	    right: 0;
+		font-size: 4em;
+		text-align: center;
+		left: 0;
+		right: 0;
 	}
-	
+
 	.who {
 		font-size: 0.9em;
 	}
 
-	.how {
-		height: 900px;
+	.research.well{
+		margin-left: 0px;
 	}
+
+	.how {
+		height: auto;
+	}
+	.research.well{
+		margin-left: 0px;
+	}
+
 }
