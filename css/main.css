@@ -206,7 +206,6 @@ fieldset[disabled] .btn-primary.active {
 .who {
 	position: relative;
 	background: url(../img/struckaxiom.png) repeat center;
-	background-position: right;
 	background-size: 80px;
 	padding: 50px;
 	height: auto;
@@ -217,13 +216,11 @@ fieldset[disabled] .btn-primary.active {
 
 .how {
 	position: relative;
-	background: #ffffff url(../img/how.jpg) no-repeat fixed center;
+	background: url(../img/how.jpg) no-repeat fixed center;
+	background-size: cover;
 	padding-top: 50px;
 	height: auto;
-	background-position-y: 39px;
-	background-position-y: 2.4375rem;
-	margin: transparent;
-	}
+}
 
 .how h2 {
 	color: #555;
@@ -254,8 +251,7 @@ fieldset[disabled] .btn-primary.active {
 .well {
 	padding: 250px 0 145px 0; padding: 13.375rem 0 10.0625rem 0;
 }
-h2 {
-}
+
 .research {
 	background: url("../img/ven.png") no-repeat center top;
 }
