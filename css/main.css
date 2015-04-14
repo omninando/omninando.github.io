@@ -233,6 +233,10 @@ fieldset[disabled] .btn-primary.active {
 	font-size: 1.3em;
 }
 
+.who p {
+	line-height:  2.5em;
+}
+
 .how {
 	position: relative;
 	background: url(../img/how.jpg) no-repeat fixed center;
@@ -267,6 +271,7 @@ fieldset[disabled] .btn-primary.active {
 .well p {
 	color: rgba(255, 255, 255, .5);
 }
+
 .research {
 	background: url("../img/ven.png") no-repeat center top;
 }
