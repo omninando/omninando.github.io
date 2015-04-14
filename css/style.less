@@ -1,0 +1,72 @@
+@f-size: 52px; //change depending on text-length
+@m-bottom: -.2em; //change depending on x-height
+
+.transition(@what: all, @time: 0.5s, @transition: ease-in-out) {
+	-webkit-transition: @what @time @transition;
+	-moz-transition:    @what @time @transition;
+	-ms-transition:     @what @time @transition;
+	-o-transition:      @what @time @transition;
+	transition:         @what @time @transition;
+}
+
+/** Mobile-first (small) View **/
+div.holder {
+  position: fixed;
+  bottom: @m-bottom;
+  font-size: @f-size;
+  text-transform: uppercase;
+
+  div.word {
+    float:left;
+
+    .mobile{
+		  float: left;
+		}
+
+		.tablet,
+		.desktop{
+		  position: absolute;
+		  top: 100px;
+		  .transition();
+		}
+
+  }
+}
+
+/** Tablet (medium) View **/
+@media only screen and (min-width: 600px) {
+
+	div.holder {
+
+	  div.word {
+
+	    &:after{
+	      content: "\00a0";
+	    }
+
+			.tablet{
+		    position: relative;
+		    top: 0px;
+		    float: left;
+		   }
+
+	  }
+	}
+}
+
+/** Desktop (large) View **/
+@media only screen and (min-width: 768px) {
+
+	div.holder {
+
+	  div.word {
+
+			.desktop{
+		    position: relative;
+		    top: 0px;
+		    float: left;
+			}
+
+	  }
+	}
+}
