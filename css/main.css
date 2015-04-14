@@ -240,7 +240,6 @@ fieldset[disabled] .btn-primary.active {
 	padding-top: 50px;
 	height: auto;
 }
-
 .how h2 {
 	color: #555;
 }
@@ -262,18 +261,18 @@ fieldset[disabled] .btn-primary.active {
 	border: none;
 	box-shadow: none;
 	text-align: center;
+	color: #fff;
+	padding: 250px 0 145px 0; padding: 13.375rem 0 10.0625rem 0;
+}
+.well p {
+	color: rgba(255, 255, 255, .5);
+}
+.research {
+	background: url("../img/ven.png") no-repeat center top;
 }
 
 .research.well{
 	margin-left: 50px;
-}
-
-.well {
-	padding: 250px 0 145px 0; padding: 13.375rem 0 10.0625rem 0;
-}
-
-.research {
-	background: url("../img/ven.png") no-repeat center top;
 }
 
 .design {
