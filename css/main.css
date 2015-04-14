@@ -185,7 +185,7 @@ fieldset[disabled] .btn-primary.active {
 	color: #fff;
 	left: 0;
 	right: 0;
-	margin-top: 80px;
+	padding-top: 80px;
 }
 
 .headline2 {
@@ -200,8 +200,23 @@ fieldset[disabled] .btn-primary.active {
 	color: #fff;
 	left: 0;
 	right: 0;
-	margin-top: 80px;
+	padding-top: 80px;
 }
+
+.headline3 {
+	font-family: "Lato", Arial, sans-serif;
+	font-weight: 100;
+	font-size: 8em;
+	line-height: .1em;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	left: 0;
+	right: 0;
+	padding-top: 100px;
+}
+
 
 .who {
 	position: relative;
@@ -328,6 +343,13 @@ fieldset[disabled] .btn-primary.active {
 		right: 0;
 	}
 
+	.headline3 {
+	   font-size: 6em;
+	   text-align: center;
+	   left: 0;
+	   right: 0;
+    }
+
 	.who {
 		font-size: 1.2em;
 	}
@@ -368,6 +390,14 @@ fieldset[disabled] .btn-primary.active {
 		left: 0;
 		right: 0;
 	}
+	
+	.headline3 {
+	   font-size: 5em;
+	   text-align: center;
+	   left: 0;
+	   right: 0;
+    }
+
 
 	.who {
 		font-size: 1.1em;
@@ -400,6 +430,13 @@ fieldset[disabled] .btn-primary.active {
 		left: 0;
 		right: 0;
 	}
+	
+	.headline3 {
+	   font-size: 4em;
+	   text-align: center;
+	   left: 0;
+	   right: 0;
+    }
 
 	.who {
 		font-size: 1.0em;
@@ -439,6 +476,13 @@ fieldset[disabled] .btn-primary.active {
 		left: 0;
 		right: 0;
 	}
+	
+	.headline3 {
+	   font-size: 4em;
+	   text-align: center;
+	   left: 0;
+	   right: 0;
+    }
 
 	.who {
 		font-size: 0.9em;
