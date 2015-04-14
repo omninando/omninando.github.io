@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type='text/css'>
+    span {
+    display: inline-block;
+    overflow: hidden;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition-delay: 0.2s;
+}
+.wen {
+    width: 36px;
+}
+.illiams {
+    width: 160px;
+}
+span.hidden {
+    width: 0px;
+    opacity: 0;
+}
+  </style>
+
+
+
+<script type='text/javascript'>
+$('.branding').hover(
+      function () { $('.nameFull').removeClass('hidden'); },
+      function () { $('.nameFull').addClass('hidden'); }
+    );
+
+</script>
+
+
+</head>
+<body>
+  <div class='branding'>
+<span class='initial'>O</span><span class='hidden nameFull wen'>wen</span>
+
+<span class='initial'>W</span><span class='hidden nameFull illiams'>illiams</span>
+</div>
+
+</body>
+
+
+</html>
+
