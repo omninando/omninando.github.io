@@ -86,6 +86,7 @@ fieldset[disabled] .btn-primary.active {
 	background: transparent;
 	box-shadow: none;
 	position: absolute;
+
 }
 
 .navbar-default .navbar-brand{
@@ -155,7 +156,10 @@ fieldset[disabled] .btn-primary.active {
  overflow-x: hidden;
 }
 
+.navbar-right {
+	margin-right: 30px;
 
+}
 
 
 /* ==========================================================================
@@ -243,7 +247,8 @@ fieldset[disabled] .btn-primary.active {
 
 .work {
 	position: relative;
-	background: #fff;
+	background: url(../img/webdev.png) no-repeat fixed center;
+	background-size: cover;
 	background-size: 50px;
 	padding-top: 100px;
 	height: 400px;
