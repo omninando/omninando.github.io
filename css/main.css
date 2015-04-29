@@ -86,14 +86,13 @@ fieldset[disabled] .btn-primary.active {
 	background: transparent;
 	box-shadow: none;
 	position: absolute;
-
 }
 
 .navbar-default .navbar-brand{
 	font-family: "Lato", Arial;
 	font-weight: 300;
 	font-size: 35px;
-	padding-left: 50px;
+	padding: 8px 0 0 100px;
 }
 
 .navbar-inner {
@@ -139,16 +138,18 @@ fieldset[disabled] .btn-primary.active {
 
 }
 
+.branding {
+	padding: 6px;
+}
+
 span {
     color: #fff;
-    display: inline-block;
     overflow: hidden;
     transition: all 1s;
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     transition-delay: 0.2s;
-    padding-top: 2px;
-    height: 40px;
+    height: 35px;
 }
 
 .ernando {
@@ -422,10 +423,6 @@ footer {
 	   right: 0;
 	}
 
-	.who {
-		font-size: 1.2em;
-	}
-
 	.how {
 		height: auto;
 	}
@@ -474,10 +471,6 @@ footer {
 	   right: 0;
 	}
 
-	.who {
-		font-size: 1.1em;
-	}
-
 	.how {
 		height: auto;
 	}
@@ -488,7 +481,6 @@ footer {
 
 	.footer li {
 		display: block;
-		margin-left: -50px;
 		margin-top: 40px;
 
 	}
@@ -524,10 +516,6 @@ footer {
 	   right: 0;
 	}
 
-	.who {
-		font-size: 1.0em;
-	}
-
 	.how {
 		height: auto;
 	}
@@ -548,13 +536,11 @@ footer {
 	}
 
 	.navbar-default .navbar-brand{
-
 		font-size: 20px;
 		font-weight: 300;
 	}
 
 	.feature {
-		background-size: 1250px;
 		padding-top: 150px;
 	}
 
@@ -577,10 +563,6 @@ footer {
 	   text-align: center;
 	   left: 0;
 	   right: 0;
-	}
-
-	.who {
-		font-size: 0.9em;
 	}
 
 	.research.well{

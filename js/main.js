@@ -45,3 +45,11 @@ $(document).ready(function() {
 });
 /*! Smooth Scroll - v1.4.5 - 2012-07-22
 * Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
+
+
+
+// Function to add the fade effect to
+$('.branding').hover(
+	function () { $('.nameFull').removeClass('hidden'); },
+	function () { $('.nameFull').addClass('hidden'); }
+);
