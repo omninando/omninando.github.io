@@ -106,7 +106,7 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar .nav li a {
 	background-size: 35px;
-	padding: 23px 32px 24px 32px;
+	padding: 23px 16px 24px 16px;
 	border-radius: 100px;
 	margin: 0 10px;
 	opacity: 1;
@@ -114,10 +114,12 @@ fieldset[disabled] .btn-primary.active {
 	-moz-transition: all .2s linear;
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
+	color: transparent;
 }
 
 .navbar .nav li a:hover {
 	opacity: .5;
+	color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -321,8 +323,9 @@ span.hidden {
 	border: 3px solid rgba(255, 255, 255, 0);
 }
 
-.facebook:hover, .twitter:hover, .dribbble:hover,
-.instagram:hover, .linkedin:hover, .email:hover, {
+.facebook:hover, .twitter:hover, .behance:hover,
+.instagram:hover, .linkedin:hover, .email:hover, 
+.github:hover {
 	opacity: 1;
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
@@ -338,8 +341,9 @@ span.hidden {
 	background: transparent url(../img/social/instagram.png) center no-repeat;
 }
 
-.dribbble {
-	background: transparent url(../img/social/dribbble.png) center no-repeat;
+.behance {
+	background: transparent url(../img/social/behance.png) center no-repeat;
+	background-size: 32px;
 }
 
 .instagram {
@@ -448,6 +452,25 @@ footer {
 
 	.navbar-default .navbar-brand{
 		font-size: 28px;
+	}
+
+	.navbar .nav {
+		width: 100%; 
+	}
+
+	.navbar .nav li {
+		background: rgba(255, 255, 255, 0.3);
+	}
+
+	.navbar .nav li a {
+		color: white;
+		background: none;
+	}
+
+	.navbar .nav li a:hover {
+		color: white;
+		opacity: 1;
+		background: none;
 	}
 
 	.headline {
