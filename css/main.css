@@ -286,7 +286,7 @@ span.hidden {
 	FOOTER
    ========================================================================== */
 .footer {
-	height: 300px;
+	height: auto;
 	padding-top: 30px;
 	background: url(../img/bg-footer.png) no-repeat fixed center;
 	background-size: cover;
@@ -603,4 +603,3 @@ footer {
 		height: auto;
 	}
 }
-
