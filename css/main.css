@@ -4,10 +4,12 @@
 
 html {
 /* 	-webkit-font-smoothing: antialiased; */
+    height:100%;
 }
 
 body {
 	  background: #424b51;
+      min-height:100%;
 }
 
 h1 {
@@ -22,7 +24,6 @@ h2 {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 	font-size: 50px;
 	font-weight: bold;
-	text-transform: uppercase;
 	color: #bebebe;
 	padding-bottom: 50px;
 
@@ -30,7 +31,7 @@ h2 {
 
 h3 {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
-	font-size: 22px;
+	font-size: 28px;
 	font-weight: normal;
 }
 
@@ -105,7 +106,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .navbar .nav li a {
-	background-size: 35px;
+	font-size: 18px;
 	padding: 23px 16px 24px 16px;
 	border-radius: 100px;
 	margin: 0 10px;
@@ -114,29 +115,19 @@ fieldset[disabled] .btn-primary.active {
 	-moz-transition: all .2s linear;
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
-	color: transparent;
+	color: #ddd;
 }
-
-.navbar .nav li a:visited {
-	color: transparent;
-}
-
-.navbar .nav li a:link {
-	color: transparent;
-}
-
 
 .navbar .nav li a:hover {
 	opacity: .5;
-	color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
+	background-color: #ddd;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #fff;
+  border-color: #ddd;
   float: right;
 }
 
@@ -154,7 +145,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 span {
-    color: #fff;
+    color: #ddd;
     overflow: hidden;
     transition: all 1s;
     -moz-transition: all 1s;
@@ -164,12 +155,12 @@ span {
 }
 
 .ernando {
-    color: #fff;
+    color: #ddd;
     width: 178px;
 }
 
 .oelho {
-    color: #fff;
+    color: #ddd;
     width: 120px;
 }
 
@@ -186,109 +177,137 @@ span.hidden {
 	text-align: center;
 }
 
-
-
-
 /* ==========================================================================
 	FEATURED
    ========================================================================== */
 .feature {
-	background: url(../img/bg5.jpg) no-repeat fixed center;
+	background: url(../img/bg3.jpg) no-repeat fixed center;
 	background-size: cover;
 	padding-top: 200px;
-	height: 800px;
+	height: 768px;
+}
+
+.feature h3 {
+	color: #ddd;
+	font-weight: 100;
 }
 
 .headline {
 	font-family: "Lato", Arial, sans-serif;
-	font-weight: 400;
-	font-size: 7em;
-	line-height: 1em;
+	font-weight: 700;
+	font-size: 4em;
+	line-height: 1.2em;
 	letter-spacing: .05em;
-	text-transform: uppercase;
 	text-align: center;
-	color: #fff;
+	color: #ddd;
 	left: 0;
 	right: 0;
-	padding-top: 100px;
+	padding-top: 200px;
 }
 
-/* ==========================================================================
-	WHO
-   ========================================================================== */
-.who {
-	position: relative;
-	background: url(../img/struckaxiom.png) repeat center;
-	background-size: 80px;
-	padding: 50px;
-	height: auto;
-	background-position-y: 39px;
-	background-position-y: 2.4375rem;
-	font-size: 1.3em;
-}
-
-.who p {
-	line-height:  2.5em;
-}
-
-
-
-
-/* ==========================================================================
-	HOW
-   ========================================================================== */
-.how {
-	position: relative;
-	background: url(../img/how.jpg) no-repeat fixed center;
-	background-size: cover;
-	padding-top: 50px;
-	height: auto;
-}
-.how h2 {
-	color: #555;
-}
-
-
-
-/* ==========================================================================
-	WORK
-   ========================================================================== */
-.work {
-	position: relative;
-	background: url(../img/webdev.png) repeat-x center;
-	height: 400px;
-	font-size: 1.3em;
-}
-
-.well {
-	background: transparent;
-	border: none;
-	box-shadow: none;
+span.glyphicon-chevron-down {
+	margin-top: 30px;
+	padding: 8px 0 0 2px;
+	font-size: 30px;
 	text-align: center;
+	border: 5px solid #ddd;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+
+/* ==========================================================================
+	BRASA
+   ========================================================================== */
+.contentBrasa{
+	text-align: left;
+	padding-top: 100px;
+	margin-left: -150px;
+	position: absolute;
+    top: 50%;
+	right: 50%;		
+
+}
+
+.brasa {
+	position: relative;
+	background: #00aeef url(../img/brasa-side.png) no-repeat right;
+	background-size: 768px;
+	height: 768px;	
+	padding: 50px;
+	font-size: 1.3em;
+}
+
+.brasa h1 {
 	color: #fff;
-	padding: 250px 0 145px 0; padding: 13.375rem 0 10.0625rem 0;
-}
-.well p {
-	color: rgba(255, 255, 255, .5);
+	font-weight: bolder;
 }
 
-.research {
-	background: url("../img/ven.png") no-repeat center top;
+.brasa p {
+	line-height: 2em;
+	font-family: "Lato";
+	font-weight: 300;
+	color: #fff;
 }
 
-.research.well{
-	margin-left: 50px;
+.btn {
+  display: inline-block;
+  font-size: 0.733em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato";
+  color: #fff;
 }
 
-.design {
-	background: url("../img/rectangle.png") no-repeat center top;
-}
-
-.refine {
-	background: url("../img/triangle.png") no-repeat center top;
+.year {
+  opacity: 0.66;
 }
 
 
+/* ==========================================================================
+	CELLS
+   ========================================================================== */
+
+.contentCells {
+	text-align: left;
+	padding-top: 100px;
+	margin-left: -150px;
+	position: absolute;
+    top: 50%;
+	right: 35%;		
+}
+
+.cells {
+	position: relative;
+	background: url(../img/bg-cells2.jpg) no-repeat center;
+	background-size: cover;
+	height: 768px;
+	padding: 50px;
+	font-size: 1.3em;
+
+}
+
+.cells h1 {
+	color: #61b977;
+	font-weight: 700;
+}
+
+.cells p {
+	line-height: 2em;
+	font-family: "Lato";
+	font-weight: 300;
+}
+
+.btncells {
+  display: inline-block;
+  font-size: 0.733em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato";
+  color: #61b977;
+}
 
 
 /* ==========================================================================
@@ -297,9 +316,8 @@ span.hidden {
 .footer {
 	height: auto;
 	padding-top: 30px;
-	background: url(../img/bg-footer.png) no-repeat fixed center;
-	background-size: cover;
 	color: #aaa;
+		background-color: #514743;
 
 }
 .footer div {
@@ -417,31 +435,19 @@ footer {
 	}
 
 	.headline {
-		font-size: 6em;
+		font-size: 4em;
 		text-align: center;
 		left: 0;
 		right: 0;
+		margin-top: -50px;
 	}
-	.headline2 {
-		font-size: 6em;
-		text-align: center;
-		left: 0;
-		right: 0;
-	}
-
-	.headline3 {
-	   font-size: 6em;
-	   text-align: center;
-	   left: 0;
-	   right: 0;
-	}
-
-	.how {
-		height: auto;
-	}
-
 	.footer {
 		height: auto;
+	}
+	.content {
+	  	position: absolute;
+	  	top: 50%;
+	  	width: 50%;
 	}
 }
 
@@ -489,25 +495,6 @@ footer {
 		left: 0;
 		right: 0;
 	}
-
-	.headline2 {
-		font-size: 5em;
-		text-align: center;
-		left: 0;
-		right: 0;
-	}
-
-	.headline3 {
-	   font-size: 5em;
-	   text-align: center;
-	   left: 0;
-	   right: 0;
-	}
-
-	.how {
-		height: auto;
-	}
-
 	.footer {
 		height: auto;
 	}
@@ -534,25 +521,6 @@ footer {
 		left: 0;
 		right: 0;
 	}
-
-	.headline2 {
-		font-size: 4em;
-		text-align: center;
-		left: 0;
-		right: 0;
-	}
-
-	.headline3 {
-	   font-size: 4em;
-	   text-align: center;
-	   left: 0;
-	   right: 0;
-	}
-
-	.how {
-		height: auto;
-	}
-
 	.footer {
 		height: auto;
 	}
@@ -582,31 +550,6 @@ footer {
 		text-align: center;
 		left: 0;
 		right: 0;
-	}
-
-	.headline2 {
-		font-size: 4em;
-		text-align: center;
-		left: 0;
-		right: 0;
-	}
-
-	.headline3 {
-	   font-size: 4em;
-	   text-align: center;
-	   left: 0;
-	   right: 0;
-	}
-
-	.research.well{
-		margin-left: 0px;
-	}
-
-	.how {
-		height: auto;
-	}
-	.research.well{
-		margin-left: 0px;
 	}
 
 	.footer {
