@@ -184,7 +184,7 @@ span.hidden {
 	background: url(../img/bg6.jpg) no-repeat fixed center;
 	background-size: cover;
 	padding-top: 200px;
-	height: 768px;
+	height: 800px;
 }
 
 .feature h3 {
@@ -233,7 +233,7 @@ span.glyphicon-chevron-down {
 	position: relative;
 	background: #00aeef url(../img/brasa-side.png) no-repeat right;
 	background-size: 768px;
-	height: 768px;	
+	height: 800px;	
 	padding: 50px;
 	font-size: 1.3em;
 }
@@ -292,7 +292,7 @@ span.glyphicon-chevron-right {
 	position: relative;
 	background: url(../img/bg-cells2.jpg) no-repeat center;
 	background-size: cover;
-	height: 768px;
+	height: 800px;
 	padding: 50px;
 	font-size: 1.3em;
 
