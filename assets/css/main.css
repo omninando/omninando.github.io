@@ -591,13 +591,17 @@ footer {
 		padding-top: 0;
 		height: auto;
 	}
-
+	
+	span.glyphicon-chevron-down {
+		margin-bottom: 10px;
+	}
+	
 	.contentBrasa {
-		padding-top: 50px;
+		padding-top: 100px;
   	}
 	
 	.contentCells {
-		padding-top: 50px;
+		padding-top: 100px;
 	}
 
 
@@ -664,6 +668,10 @@ footer {
 	.feature {
 		padding-top: 0;
 		height: auto;
+	}
+
+	span.glyphicon-chevron-down {
+		margin-bottom: 10px;
 	}
 
 	.brasa {
