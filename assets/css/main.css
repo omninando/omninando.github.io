@@ -589,7 +589,17 @@ footer {
 	}
 	.feature {
 		padding-top: 0;
+		height: auto;
 	}
+
+	.contentBrasa {
+		padding-top: 50px;
+  	}
+	
+	.contentCells {
+		padding-top: 50px;
+	}
+
 
 	.brasa {
 		background-size: 100%;
@@ -653,6 +663,7 @@ footer {
 	}
 	.feature {
 		padding-top: 0;
+		height: auto;
 	}
 
 	.brasa {
