@@ -672,6 +672,14 @@ footer {
 		color: #fff;
 	}
 	
+	.contentBrasa {
+		padding-top: 50px;
+  	}
+	
+	.contentCells {
+		padding-top: 50px;
+	}
+	
 	.cells h1 {
 		font-size: 20px;
 		color: #61b977;
