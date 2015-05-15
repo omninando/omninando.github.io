@@ -42,7 +42,7 @@
 	</head>
 	<!-- All design, images, code, and content is the property and copyright of Fernando Coelho unless otherwise noted. Do not
 	steal. -->
-	<body>
+	<body onload="getHeight()">
 		<!-- HEADER -->
 		<header class="navbar navbar-default animated fadeInDown">
 			<div class="container" role="navigation" id="top">
@@ -78,7 +78,7 @@
 		</header>
 		<!-- CONTENT -->
 		<div class="container">
-			<div class="row feature">
+			<div class="row feature" data-autosize>
 				<div class="col-md-10 col-md-offset-1 animated fadeInUp">
 					<h2 class="headline">Hi! I'm a developer & designer.</h2>
 					<h3 class="healine2">Below you can see what I've been working on recently</h3>
@@ -86,7 +86,7 @@
 				</div>
 			</div>
 			<!-- WORK -->
-			<div class="row brasa" id="brasa">
+			<div class="row brasa" id="brasa" data-autosize>
 				<div class="col-md-8 col-md-offset-2">
 					<article class="contentBrasa">
 						<time datetime="2015-02">
@@ -107,7 +107,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="row cells">
+			<div class="row cells" data-autosize>
 				<div class="col-md-8 col-md-offset-2">
 					<article class="contentCells">
 						<time datetime="2015-02">
@@ -156,6 +156,13 @@
 		<script src="assets/js/main.js"></script>
 		<script type='text/javascript'></script>
 		<!-- Google Analytics -->
+		<script>
+		function getHeight() {
+		    var x = screen.height + "px";
+		    document.getElementById("demo").css = x;
+		}
+		</script>
+
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
