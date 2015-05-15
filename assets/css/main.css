@@ -119,7 +119,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .navbar .nav li a:hover {
-	opacity: .9;
+	opacity: .5;
+	color: #ddd;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -177,9 +178,7 @@ span.hidden {
 	text-align: center;
 }
 
-/* ==========================================================================
-	FEATURED
-   ========================================================================== */
+/* = FEATURED =============================================================== */
 .feature {
 	background: url(../img/bg6.jpg) no-repeat fixed center;
 	background-size: cover;
@@ -216,9 +215,8 @@ span.glyphicon-chevron-down {
 	width: 50px;
 }
 
-/* ==========================================================================
-	BRASA
-   ========================================================================== */
+/* = BRASA  =============================================================== */
+
 .contentBrasa{
 	text-align: left;
 	padding-top: 100px;
@@ -275,9 +273,7 @@ span.glyphicon-chevron-right {
 	margin-left: -10px;
 }
 
-/* ==========================================================================
-	CELLS
-   ========================================================================== */
+/* = CELLS =============================================================== */
 
 .contentCells {
 	text-align: left;
@@ -292,7 +288,7 @@ span.glyphicon-chevron-right {
 	position: relative;
 	background: url(../img/bg-cells2.jpg) no-repeat center;
 	background-size: cover;
-	height: 800px;
+	height: 768px;
 	padding: 50px;
 	font-size: 1.3em;
 
@@ -432,7 +428,7 @@ footer {
    ========================================================================== */
 
 @media (max-width: 992px){
-	.navbar-default .navbar-brand{
+	.navbar-default .navbar-brand {
 		font-size: 28px;
 	}
 
@@ -440,6 +436,7 @@ footer {
 	    color: #fff;
 	    width: 140px;
 	}
+	
 	.oelho {
 	    color: #fff;
 	    width: 100px;
@@ -452,14 +449,43 @@ footer {
 		right: 0;
 		margin-top: -50px;
 	}
+	
 	.footer {
 		height: auto;
 	}
-	.content {
-	  	position: absolute;
-	  	top: 50%;
-	  	width: 50%;
+	
+	.brasa {
+		background: #00aeef url(../img/brasa-mobile.png) no-repeat top center;
+		background-size: 600px;
+		height: auto;
+
 	}
+	
+	.contentBrasa {
+		padding-top: 300px;
+		text-align: center;
+		position: static;
+		margin-left: 0; 
+  		top: 50%;
+	  	height: auto;
+	 	width: 100%;
+  	}
+	  
+	.cells {
+		background: #fff url(../img/cells-mobile.jpg) no-repeat top center;
+		background-size: 100%;
+		height: auto;
+		}
+	
+	.contentCells {
+		padding-top: 300px;
+		text-align: center;
+		position: static;
+		margin-left: 0; 
+  		top: 50%;
+	  	height: auto;
+	 	width: 100%;
+	}	
 }
 
 @media (max-width: 768px){
@@ -498,7 +524,6 @@ footer {
 		opacity: 1;
 		background: none;
 	}
-	.navbar .nav li a:c
 
 	.headline {
 		font-size: 5em;
@@ -515,6 +540,36 @@ footer {
 		margin-top: 40px;
 
 	}
+	.brasa {
+		background: #00aeef url(../img/brasa-mobile.png) no-repeat top center;
+		background-size: 600px;
+		height: auto;
+
+	}
+	.contentBrasa {
+		padding-top: 300px;
+		text-align: center;
+		position: static;
+		margin-left: 0; 
+  		top: 50%;
+	  	height: auto;
+	 	width: 100%;
+  }
+  .cells {
+		background: #fff url(../img/cells-mobile.jpg) no-repeat top center;
+		background-size: 100%;
+		height: auto;
+
+	}
+	.contentCells {
+		padding-top: 300px;
+		text-align: center;
+		position: static;
+		margin-left: 0; 
+  		top: 50%;
+	  	height: auto;
+	 	width: 100%;
+	}	
 }
 
 @media (max-width: 640px){
