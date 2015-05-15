@@ -588,7 +588,7 @@ footer {
 		right: 0;
 	}
 	.feature {
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 
 	.brasa {
@@ -651,7 +651,10 @@ footer {
 		left: 0;
 		right: 0;
 	}
-			
+	.feature {
+		padding-top: 50px;
+	}
+
 	.brasa {
 		background-size: 100%;
 		height: auto;
@@ -670,9 +673,9 @@ footer {
 	}
 	
 	.cells h1 {
-	font-size: 20px;
-	color: #61b977;
-	font-weight: 700;
+		font-size: 20px;
+		color: #61b977;
+		font-weight: 700;
 	}
 	
 	.cells p {
