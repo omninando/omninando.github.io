@@ -587,7 +587,11 @@ footer {
 		left: 0;
 		right: 0;
 	}
-		
+	.feature {
+		background-size: 100%;
+		height: auto;
+	}
+
 	span.glyphicon-chevron-down {
 		margin-bottom: 10px;
 	}
@@ -660,6 +664,10 @@ footer {
 		text-align: center;
 		left: 0;
 		right: 0;
+	}
+
+	.feature {
+		height: auto;
 	}
 
 	span.glyphicon-chevron-down {
