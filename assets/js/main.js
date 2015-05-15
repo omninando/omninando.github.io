@@ -53,3 +53,24 @@ $('.branding').hover(
 	function () { $('.nameFull').removeClass('hidden'); },
 	function () { $('.nameFull').addClass('hidden'); }
 );
+
+
+//Function to transition the second section
+var count = 0;
+function updateTransition() {
+  var el = document.querySelector(".feature.box");
+  
+  if (count < 2) {
+	  if (el) {
+	    el.className = "row feature box1";
+		count++;
+	  } else {
+	    el = document.querySelector(".feature.box1");
+	    el.className = "row feature box";
+		count ++;
+	  }
+   }
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 1000);            

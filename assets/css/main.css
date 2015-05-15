@@ -115,20 +115,20 @@ fieldset[disabled] .btn-primary.active {
 	-moz-transition: all .2s linear;
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
-	color: #ddd;
+	color: #fff;
 }
 
 .navbar .nav li a:hover {
 	opacity: .5;
-	color: #ddd;
+	color: #fff;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #ddd;
+	background-color: #fff;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  border-color: #fff;
   float: right;
 }
 
@@ -146,7 +146,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 span {
-    color: #ddd;
+    color: #fff;
     overflow: hidden;
     transition: all 1s;
     -moz-transition: all 1s;
@@ -156,12 +156,12 @@ span {
 }
 
 .ernando {
-    color: #ddd;
+    color: #fff;
     width: 178px;
 }
 
 .oelho {
-    color: #ddd;
+    color: #fff;
     width: 120px;
 }
 
@@ -179,15 +179,34 @@ span.hidden {
 }
 
 /* = FEATURED =============================================================== */
-.feature {
+.feature.box {
 	background: url(../img/bg.jpg) no-repeat fixed center;
 	background-size: cover;
 	padding-top: 10%;
 	height: 100vh;
+	-webkit-transition-property: height;
+  	-webkit-transition-duration: 1s;
+  	-webkit-transition-timing-function: ease;
+  	transition-property: height;
+  	transition-duration: 1s;
+  	transition-timing-function: ease;
+}
+
+.feature.box1 {
+	background: url(../img/bg.jpg) no-repeat fixed center;
+	background-size: cover;
+	padding-top: 10%;
+	height: 90vh;
+ 	-webkit-transition-property: height;
+  	-webkit-transition-duration: 1s;
+  	-webkit-transition-timing-function: ease;
+  	transition-property: height;
+  	transition-duration: 1s;
+  	transition-timing-function: ease;
 }
 
 .feature h3 {
-	color: #ddd;
+	color: #fff;
 	font-weight: 100;
 }
 
@@ -198,7 +217,7 @@ span.hidden {
 	line-height: 1.2em;
 	letter-spacing: .05em;
 	text-align: center;
-	color: #ddd;
+	color: #fff;
 	left: 0;
 	right: 0;
 	padding-top: 200px;
@@ -210,7 +229,7 @@ span.glyphicon-chevron-down {
 	padding: 8px 0 0 2px;
 	font-size: 30px;
 	text-align: center;
-	border: 5px solid #ddd;
+	border: 5px solid #fff;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
@@ -229,6 +248,9 @@ span.glyphicon-chevron-down {
 }
 
 .brasa {
+	-webkit-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
+	box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
 	position: relative;
 	background: #00aeef url(../img/brasa-side.png) no-repeat right;
 	background-size: 768px;		
