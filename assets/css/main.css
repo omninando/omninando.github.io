@@ -181,7 +181,7 @@ span.hidden {
 /* = FEATURED =============================================================== */
 .feature.box {
 	background: url(../img/bg.jpg) no-repeat fixed center;
-	background-size: 110%;
+	background-size: auto 110%;
 	padding-top: 10%;
 	height: 100vh;
 	-webkit-transition-property: height background-size;
@@ -194,7 +194,7 @@ span.hidden {
 
 .feature.box1 {
 	background: url(../img/bg.jpg) no-repeat fixed center;
-	background-size: 100%;
+	background-size: auto 100%;
 	padding-top: 10%;
 	height: 90vh;
  	-webkit-transition-property: height background-size;
@@ -623,7 +623,10 @@ footer {
 	.feature {
 		height: auto;
 	}
-
+		
+	span {
+			overflow: visible;
+	}
 	.feature h3 {
 		display: none;
 	}
