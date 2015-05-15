@@ -181,26 +181,26 @@ span.hidden {
 /* = FEATURED =============================================================== */
 .feature.box {
 	background: url(../img/bg.jpg) no-repeat fixed center;
-	background-size: cover;
+	background-size: 110%;
 	padding-top: 10%;
 	height: 100vh;
-	-webkit-transition-property: height;
-  	-webkit-transition-duration: 1s;
+	-webkit-transition-property: height background-size;
+  	-webkit-transition-duration: .5s;
   	-webkit-transition-timing-function: ease;
-  	transition-property: height;
-  	transition-duration: 1s;
+  	transition-property: height background-size;
+  	transition-duration: .5s;
   	transition-timing-function: ease;
 }
 
 .feature.box1 {
 	background: url(../img/bg.jpg) no-repeat fixed center;
-	background-size: cover;
+	background-size: 100%;
 	padding-top: 10%;
 	height: 90vh;
- 	-webkit-transition-property: height;
-  	-webkit-transition-duration: 1s;
+ 	-webkit-transition-property: height background-size;
+  	-webkit-transition-duration: .1s;
   	-webkit-transition-timing-function: ease;
-  	transition-property: height;
+  	transition-property: height background-size;
   	transition-duration: 1s;
   	transition-timing-function: ease;
 }

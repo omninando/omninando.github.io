@@ -55,7 +55,7 @@ $('.branding').hover(
 );
 
 
-//Function to transition the second section
+//Function to update BRASA section transition
 var count = 0;
 function updateTransition() {
   var el = document.querySelector(".feature.box");
