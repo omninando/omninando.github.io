@@ -182,7 +182,7 @@ span.hidden {
 .feature {
 	background: url(../img/bg.jpg) no-repeat fixed center;
 	background-size: cover;
-	padding-top: 200px;
+	padding-top: 10%;
 	height: 100vh;
 }
 
@@ -205,6 +205,7 @@ span.hidden {
 }
 
 span.glyphicon-chevron-down {
+	
 	margin-top: 30px;
 	padding: 8px 0 0 2px;
 	font-size: 30px;
@@ -398,6 +399,11 @@ span.glyphicon-chevron-right {
 	background: transparent url(../img/social/paperplane.png) center no-repeat;
 }
 
+.footer br
+  {
+    clear: left;
+  } 
+
 footer {
 	padding: 20px;
 	background: transparent;
@@ -452,6 +458,7 @@ footer {
 	
 	.footer {
 		height: auto;
+		width: auto;
 	}
 	
 	.brasa {
@@ -533,13 +540,16 @@ footer {
 	}
 	.footer {
 		height: auto;
+		width: 100%;
 	}
 
 	.footer li {
-		display: block;
-		margin-top: 40px;
-
+		display: inline;
+		float: left;
+		margin: 30px 0 30px 0;
+		width: 33%;
 	}
+	
 	.brasa {
 		background: #00aeef url(../img/brasa-mobile.png) no-repeat top center;
 		background-size: 600px;
@@ -587,21 +597,27 @@ footer {
 		left: 0;
 		right: 0;
 	}
+		
 	.feature {
-		padding-top: 0;
 		height: auto;
 	}
+
+	.feature h3 {
+		display: none;
+	}
+
 	
 	span.glyphicon-chevron-down {
+		margin-top: 0;
 		margin-bottom: 10px;
 	}
 	
 	.contentBrasa {
-		padding-top: 100px;
+		padding-top: 60%;
   	}
 	
 	.contentCells {
-		padding-top: 100px;
+		padding-top: 60%;
 	}
 
 
@@ -611,7 +627,7 @@ footer {
 	}
 	
 	.brasa h1 {
-		font-size: 20px;
+		font-size: 24px;
 		color: #fff;
 		font-weight: bolder;
 	}
@@ -624,7 +640,7 @@ footer {
 	}
 	
 	.cells h1 {
-	font-size: 20px;
+	font-size: 24px;
 	color: #61b977;
 	font-weight: 700;
 	}
@@ -641,6 +657,7 @@ footer {
 	
 	.footer {
 		height: auto;
+		width: auto;
 	}
 
 	.footer li {
@@ -665,12 +682,13 @@ footer {
 		left: 0;
 		right: 0;
 	}
+
 	.feature {
-		padding-top: 0;
 		height: auto;
 	}
 
 	span.glyphicon-chevron-down {
+		margin-top: 0; 
 		margin-bottom: 10px;
 	}
 
@@ -679,7 +697,7 @@ footer {
 		height: auto;
 	}
 	.brasa h1 {
-		font-size: 20px;
+		font-size: 24px;
 		color: #fff;
 		font-weight: bolder;
 	}
@@ -691,16 +709,9 @@ footer {
 		color: #fff;
 	}
 	
-	.contentBrasa {
-		padding-top: 100px;
-  	}
-	
-	.contentCells {
-		padding-top: 100px;
-	}
 	
 	.cells h1 {
-		font-size: 20px;
+		font-size: 24px;
 		color: #61b977;
 		font-weight: 700;
 	}
@@ -713,5 +724,18 @@ footer {
 	
 	.footer {
 		height: auto;
+		width: auto;
+	}
+}
+
+@media (max-width: 360){	
+	.footer {
+		height: auto;
+		width: auto;
+	}
+	.footer a {
+		margin: 0;
+		padding: 0;
+		border: 0;
 	}
 }
