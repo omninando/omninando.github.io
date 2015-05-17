@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	  background: #424b51;
+	  background: transparent;
       min-height:100%;
 }
 
@@ -33,12 +33,14 @@ h3 {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 	font-size: 28px;
 	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 h4 {
 	font-size: 19px;
 	font-weight: 700;
-	text-transform: uppercase;
+
 }
 
 h5 {
@@ -174,8 +176,15 @@ span.hidden {
    CONTENT
    ========================================================================== */
 .container {
+	background: transparent;
 	width: 100%;
 	text-align: center;
+}
+.container.content {
+	background: transparent;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
 }
 
 /* = FEATURED =============================================================== */
@@ -190,6 +199,7 @@ span.hidden {
   	transition-property: height background-size;
   	transition-duration: .5s;
   	transition-timing-function: ease;
+  	z-index: 9;
 }
 
 .feature.box1 {
@@ -203,6 +213,7 @@ span.hidden {
   	transition-property: height background-size;
   	transition-duration: 1s;
   	transition-timing-function: ease;
+  	z-index: 10;
 }
 
 .feature h3 {
@@ -257,6 +268,7 @@ span.glyphicon-chevron-down {
 	height: 100vh;
 	padding: 50px;
 	font-size: 1.3em;
+	z-index: 10;
 }
 
 .brasa h1 {
@@ -304,17 +316,21 @@ span.glyphicon-chevron-right {
 	margin-left: -150px;
 	position: absolute;
     top: 50%;
-	right: 35%;		
+	right: 35%;
 }
 
+
+.contentCells span.under, .contentCells span.year {
+	color: #555;
+}
 .cells {
 	position: relative;
-	background: url(../img/cells-side.jpg) no-repeat center;
-	background-size: cover;
+	background: transparent url(../img/cells-side.jpg) no-repeat center;
+	background-size: 100% auto;
 	height: 100vh;
 	padding: 50px;
 	font-size: 1.3em;
-
+	z-index: 10;
 }
 
 .cells h1 {
@@ -343,27 +359,30 @@ span.glyphicon-chevron-right {
 /* ==========================================================================
 	FOOTER
    ========================================================================== */
-.footer {
-	height: auto;
-	padding-top: 30px;
-	color: #aaa;
-		background-color: #514743;
 
+.footer {
+	height: 40vh;
+	position: relative;
+	color: #aaa;
+	background-color: #514743;
+	z-index: -1;
 }
+
 .footer div {
 	margin: 60px auto;
 }
 
-.footer ul {
+.footer-wrapper ul {
 	margin-left: -30px;
+	padding-top: 2%;
 }
 
-.footer li {
+.footer-wrapper li {
 	display: inline;
 	list-style: none;
 }
 
-.footer a {
+.footer-wrapper a {
 	padding: 23px 32px 24px 32px;
 	border-radius: 100px;
 	margin: 0 20px;
@@ -421,24 +440,23 @@ span.glyphicon-chevron-right {
 	background: transparent url(../img/social/paperplane.png) center no-repeat;
 }
 
-.footer br
+.footer-wrapper br
   {
     clear: left;
   } 
 
 footer {
-	padding: 20px;
-	background: transparent;
+	padding-top:2%;
 	text-align: center;
 }
 
-.footer a {
+.footer-wrapper a {
 	text-decoration: none;
 	color: #aaa;
 	transition: color 0.2s ease;
 }
 
-.footer a:hover {
+.footer-wrapper a:hover {
 	color: #318ec3;
 }
 
@@ -491,7 +509,7 @@ footer {
 	}
 	
 	.contentBrasa {
-		padding-top: 300px;
+		padding-top: 350px;
 		text-align: center;
 		position: static;
 		margin-left: 0; 
@@ -579,7 +597,7 @@ footer {
 
 	}
 	.contentBrasa {
-		padding-top: 300px;
+		padding-top: 350px;
 		text-align: center;
 		position: static;
 		margin-left: 0; 
@@ -638,7 +656,7 @@ footer {
 	}
 	
 	.contentBrasa {
-		padding-top: 60%;
+		padding-top: 80%;
   	}
 	
 	.contentCells {
