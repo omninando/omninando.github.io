@@ -362,7 +362,7 @@ span.glyphicon-chevron-right {
 
 .footer {
 	height: 35vh;
-	position: relative;
+	position: absolute;
 	color: #aaa;
 	background-color: #514743;
 	z-index: -1;
