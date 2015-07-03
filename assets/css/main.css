@@ -189,7 +189,7 @@ span.hidden {
 
 /* = FEATURED =============================================================== */
 .feature.box {
-	background: #514743 url(../img/bg.jpg) no-repeat fixed center;
+	background: #514743 url(../img/bg2.png) no-repeat fixed center;
 	background-size: auto 110%;
 	padding-top: 10%;
 	height: 100vh;
@@ -203,8 +203,8 @@ span.hidden {
 }
 
 .feature.box1 {
-	background: #514743 url(../img/bg.jpg) no-repeat fixed center;
-	background-size: auto 100%;
+	background: #514743 url(../img/bg2.png) no-repeat fixed center;
+	background-size: auto 102%;
 	padding-top: 10%;
 	height: 90vh;
  	-webkit-transition-property: height background-size;
@@ -532,6 +532,9 @@ footer {
   		top: 50%;
 	  	height: auto;
 	 	width: 100%;
+	}
+	.footer {
+		padding: 130px;
 	}	
 }
 
@@ -581,8 +584,9 @@ footer {
 	.footer {
 		height: auto;
 		width: 100%;
+		padding: 180px;
 	}
-
+	
 	.footer li {
 		display: inline;
 		float: left;
