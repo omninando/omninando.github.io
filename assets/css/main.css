@@ -246,6 +246,69 @@ span.glyphicon-chevron-down {
 	width: 50px;
 }
 
+/* = BRASASummer  =============================================================== */
+
+.contentBrasaSummer{
+	text-align: left;
+	padding-top: 100px;
+	margin-left: -150px;
+	position: absolute;
+    top: 50%;
+	right: 50%;		
+
+}
+
+.brasaSummer {
+	-webkit-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
+	box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
+	position: relative;
+	background: #0e4568 url(../img/brasasummer-side.png) no-repeat right;
+	background-size: 768px;		
+	height: 100vh;
+	padding: 50px;
+	font-size: 1.3em;
+	z-index: 10;
+}
+
+.brasaSummer h1 {
+	font-size: 38px;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.brasaSummer p {
+	line-height: 2em;
+	font-family: "Lato";
+	font-weight: 300;
+	color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.733em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato";
+  color: #fff;
+}
+
+span.glyphicon-chevron-right {
+  font-size: 0.733em;
+	padding: 23px 0 0 0;
+	font-weight: 100;
+}
+
+.year {
+  opacity: 0.66;
+}
+
+.cta {
+	margin-left: -10px;
+}
+
+
 /* = BRASA  =============================================================== */
 
 .contentBrasa{
