@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	  background: #514743;
+	  background: #d1936e;
       min-height:100%;
 }
 
@@ -57,7 +57,7 @@ h6 {
 
 p {
 	font-family: "Merriweather", Arial, serif;
-	color: #555;
+	color: #d1936e;
 }
 
 .btn-primary.disabled,
@@ -75,6 +75,24 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
+	background-color: transparent;
+}
+
+.btncells.disabled,
+.btncells[disabled],
+fieldset[disabled] .btncells-primary,
+.btncells-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btncells-primary[disabled].active,
+fieldset[disabled] .btncells-primary.active {
 	background-color: transparent;
 }
 
@@ -189,7 +207,7 @@ span.hidden {
 
 /* = FEATURED =============================================================== */
 .feature.box {
-	background: #514743 url(../img/bg.jpg) no-repeat fixed center;
+	background: #d1936e url(../img/bg.jpg) no-repeat center;
 	background-size: auto 110%;
 	padding-top: 10%;
 	height: 100vh;
@@ -203,7 +221,7 @@ span.hidden {
 }
 
 .feature.box1 {
-	background: #514743 url(../img/bg.jpg) no-repeat fixed center;
+	background: #d1936e url(../img/bg.jpg) no-repeat center;
 	background-size: auto 102%;
 	padding-top: 10%;
 	height: 90vh;
@@ -386,6 +404,7 @@ span.glyphicon-chevron-right {
 .contentCells span.under, .contentCells span.year {
 	color: #555;
 }
+
 .cells {
 	position: relative;
 	background: transparent url(../img/cells-side.jpg) no-repeat center;
@@ -418,6 +437,16 @@ span.glyphicon-chevron-right {
   color: #61b977;
 }
 
+.btncells[hover] {
+  display: inline-block;
+  font-size: 0.733em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato";
+  color: #61b977;
+}
+
 
 /* ==========================================================================
 	FOOTER
@@ -427,7 +456,7 @@ span.glyphicon-chevron-right {
 	height: 35vh;
 	position: absolute;
 	color: #aaa;
-	background-color: #514743;
+	background-color: #d1936e;
 	z-index: -1;
 }
 
