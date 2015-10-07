@@ -779,6 +779,7 @@ footer {
 	}
 
 	.headline {
+		margin-top: -60px;
 		font-size: 4em;
 		text-align: center;
 		left: 0;
