@@ -297,7 +297,7 @@ span.glyphicon-chevron-down {
 	transform: rotate(2deg);
 }
 
-.contentgloboMais{
+.contentGloboMais{
 	text-align: left;
 	padding-top: 100px;
 	margin-left: -150px;
@@ -707,6 +707,16 @@ footer {
 		width: 100%;
 		}
 
+	.contentGloboMais {
+		text-align: left;
+		position: static;
+		margin-left: -10%; 
+		top: 50%;
+		height: 60%;
+		width: 100%;
+	}
+
+
 	.contentCells {
 		text-align: left;
 		position: static;
@@ -716,7 +726,7 @@ footer {
 		width: 100%;
 	}
 
-.contentBrasa {
+	.contentBrasa {
 		text-align: left;
 		position: static;
 		margin-left: -10%; 
@@ -724,6 +734,8 @@ footer {
 		height: 60%;
 		width: 100%;
 	}
+
+
 	.footer {
 		height: auto;
 		width: auto;
@@ -781,6 +793,24 @@ footer {
 		left: 0;
 		right: 0;
 	}
+	
+	.globoMais {
+		background:#2d77bd  url(../img/hand-mobile.png) no-repeat top center;
+		background-size: 500px;
+		background-position: 50% 12%;
+		height: 100%;
+	}
+
+		.contentGloboMais {
+			padding-top: 350px;
+			text-align: center;
+			position: static;
+			margin-left: 0; 
+			top: 50%;
+			height: auto;
+			width: auto;
+		}
+
 	
 	.brasaSummer {
 		background:#013754  url(../img/brasasummer-mobile2.png) no-repeat top center;
