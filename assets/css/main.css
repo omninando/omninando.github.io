@@ -253,7 +253,7 @@ span.hidden {
 	color: #fff;
 	left: 0;
 	right: 0;
-	padding-top: 150px;
+	padding-top: 50px;
 }
 
 span.glyphicon-chevron-down {
@@ -700,6 +700,7 @@ footer {
 		}
 
 	.headline {
+		margin-top: -300px;
 		font-size: 4em;
 		margin-top: -10px;
 		text-align: center;
