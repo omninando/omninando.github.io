@@ -867,6 +867,7 @@ footer {
 	}
 
 	.headline {
+		margin-top: -60px;
 		font-size: 4em;
 		text-align: center;
 		left: 0;
@@ -918,7 +919,8 @@ footer {
 	}
 }
 
-@media (max-width: 360){	
+@media (max-width: 360){
+		
 	.footer {
 		height: auto;
 		width: auto;
