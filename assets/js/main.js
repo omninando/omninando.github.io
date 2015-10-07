@@ -73,4 +73,23 @@ function updateTransition() {
   return el;
 }
 
+var count1 = 0;
+function updateTransition2() {
+  var el2 = document.querySelector(".headline.box");
+  
+  if (count1 < 2) {
+	  if (el2) {
+	    el2.className = "headline box1";
+		count1++;
+	  } else {
+	    el2 = document.querySelector(".headline.box1");
+	    el2.className = "headline box";
+		count1++;
+	  }
+   }
+  return el2;
+}
+
 var intervalID = window.setInterval(updateTransition, 1000);            
+var intervalID = window.setInterval(updateTransition2, 1000);            
+

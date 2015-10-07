@@ -5,10 +5,12 @@
 html {
 /* 	-webkit-font-smoothing: antialiased; */
     height:100%;
+	width: 100%;
+
 }
 
 body {
-	  background: #d1936e;
+	  background: #666666;
       min-height:100%;
 }
 
@@ -200,17 +202,17 @@ span.hidden {
 }
 .container.content {
 	background: transparent;
-	width: 100%;
 	text-align: center;
 	z-index: 10;
 }
 
 /* = FEATURED =============================================================== */
 .feature.box {
-	background: #d1936e url(../img/bg.jpg) no-repeat center;
+	background: #d1936e url(../img/bg.jpg) no-repeat center fixed;
 	background-size: auto 110%;
 	padding-top: 10%;
 	height: 100vh;
+	padding-top: 200px;
 	-webkit-transition-property: height background-size;
   	-webkit-transition-duration: .5s;
   	-webkit-transition-timing-function: ease;
@@ -221,11 +223,12 @@ span.hidden {
 }
 
 .feature.box1 {
-	background: #d1936e url(../img/bg.jpg) no-repeat center;
-	background-size: auto 102%;
+	background: #d1936e url(../img/bg.jpg) no-repeat center fixed;
+	background-size: auto 110%;
 	padding-top: 10%;
 	height: 90vh;
- 	-webkit-transition-property: height background-size;
+	padding-top: 200px;
+	-webkit-transition-property: height background-size;
   	-webkit-transition-duration: .1s;
   	-webkit-transition-timing-function: ease;
   	transition-property: height background-size;
@@ -233,6 +236,7 @@ span.hidden {
   	transition-timing-function: ease;
   	z-index: 10;
 }
+
 
 .feature h3 {
 	color: #fff;
@@ -249,7 +253,7 @@ span.hidden {
 	color: #fff;
 	left: 0;
 	right: 0;
-	padding-top: 200px;
+	padding-top: 150px;
 }
 
 span.glyphicon-chevron-down {
@@ -266,16 +270,6 @@ span.glyphicon-chevron-down {
 
 /* = BRASASummer  =============================================================== */
 
-.contentBrasaSummer{
-	text-align: left;
-	padding-top: 100px;
-	margin-left: -150px;
-	position: absolute;
-    top: 50%;
-	right: 50%;		
-
-}
-
 .brasaSummer {
 	-webkit-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
@@ -287,6 +281,29 @@ span.glyphicon-chevron-down {
 	padding: 50px;
 	font-size: 1.3em;
 	z-index: 10;
+}
+
+.brasaSummer:after {
+	content: "";
+	position: relative;
+	top: 93%;
+	left: -66px;
+	height: 15%;
+	width: 100vw;
+	background: #00aeef;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.contentBrasaSummer{
+	text-align: left;
+	padding-top: 100px;
+	margin-left: -150px;
+	position: absolute;
+    top: 50%;
+	right: 50%;		
+
 }
 
 .brasaSummer h1 {
@@ -329,28 +346,37 @@ span.glyphicon-chevron-right {
 
 /* = BRASA  =============================================================== */
 
+.brasa {
+	position: relative;
+	background: #00aeef url(../img/brasa-side.png) no-repeat right;
+	background-size: 768px;	
+	height: 100vh;
+	font-size: 1.3em;
+	z-index: 10;
+}
+
+.brasa:after {	
+	content: "";
+	position: relative;
+	top: 93%;
+	left: -15px;
+	height: 15%;
+	width: 100vw;
+	background: #fff;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
 .contentBrasa{
 	text-align: left;
 	padding-top: 100px;
 	margin-left: -150px;
 	position: absolute;
     top: 50%;
-	right: 50%;		
-
+	right: 50%;
 }
 
-.brasa {
-	-webkit-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
-	box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
-	position: relative;
-	background: #00aeef url(../img/brasa-side.png) no-repeat right;
-	background-size: 768px;		
-	height: 100vh;
-	padding: 50px;
-	font-size: 1.3em;
-	z-index: 10;
-}
 
 .brasa h1 {
 	font-size: 38px;
@@ -391,28 +417,39 @@ span.glyphicon-chevron-right {
 
 /* = CELLS =============================================================== */
 
+.cells {
+	position: relative;
+	background: transparent url(../img/cells-side2.jpg) no-repeat center;
+	background-size: 100% auto;
+	height: 110vh;
+	font-size: 1.3em;
+	z-index: 10;
+}
+
 .contentCells {
 	text-align: left;
 	padding-top: 100px;
 	margin-left: -150px;
 	position: absolute;
     top: 50%;
-	right: 35%;
+	right: 50%;		
 }
 
+.cells:after {
+	content: "";
+	position: relative;
+	top: 93%;
+	left: -15px;
+	height: 15%;
+	width: 100vw;
+	background: #666666;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
 
 .contentCells span.under, .contentCells span.year {
 	color: #555;
-}
-
-.cells {
-	position: relative;
-	background: transparent url(../img/cells-side.jpg) no-repeat center;
-	background-size: 100% auto;
-	height: 100vh;
-	padding: 50px;
-	font-size: 1.3em;
-	z-index: 10;
 }
 
 .cells h1 {
@@ -454,10 +491,10 @@ span.glyphicon-chevron-right {
 
 .footer {
 	height: 35vh;
-	position: absolute;
+	position: relative;
 	color: #aaa;
-	background-color: #d1936e;
-	z-index: -1;
+	background-color: #666666;
+	z-index: 10;
 }
 
 .footer div {
@@ -466,7 +503,6 @@ span.glyphicon-chevron-right {
 
 .footer-wrapper ul {
 	margin-left: -30px;
-	padding-top: 2%;
 }
 
 .footer-wrapper li {
@@ -587,53 +623,45 @@ footer {
 		right: 0;
 		margin-top: 50px;
 	}
-	
+		
+	.contentBrasaSummer {
+		text-align: left;
+		position: static;
+		margin-left: -10%; 
+		top: 50%;
+		height: 60%;
+		width: 100%;
+		}
+
+	.contentCells {
+		text-align: left;
+		position: static;
+		margin-left: -10%; 
+		top: 50%;
+		height: 60%;
+		width: 100%;
+	}
+
+.contentBrasa {
+		text-align: left;
+		position: static;
+		margin-left: -10%; 
+		top: 50%;
+		height: 60%;
+		width: 100%;
+	}
 	.footer {
 		height: auto;
 		width: auto;
 	}
 	
-	.brasa {
-		background: #00aeef url(../img/brasa-mobile.png) no-repeat top center;
-		background-size: 600px;
-		height: auto;
-
-	}
-	
-	.contentBrasa {
-		padding-top: 350px;
-		text-align: center;
-		position: static;
-		margin-left: 0; 
-  		top: 50%;
-	  	height: auto;
-	 	width: 100%;
-  	}
-	  
-	.cells {
-		background: #fff url(../img/cells-mobile.jpg) no-repeat top center;
-		background-size: 100%;
-		height: auto;
+		.footer h4 {
+			padding-bottom: 3%;
 		}
-	
-	.contentCells {
-		padding-top: 300px;
-		text-align: center;
-		position: static;
-		margin-left: 0; 
-  		top: 50%;
-	  	height: auto;
-	 	width: 100%;
-	}
-	.footer {
-		padding: 130px;
-	}	
+
 }
 
 @media (max-width: 768px){
-	.navbar-inner {
-		padding-top: 0;
-	}
 
 	.navbar-default .navbar-brand{
 		color: #fff;
@@ -644,39 +672,93 @@ footer {
 		padding-left: 10px;
 	}
 
-	.navbar-default .navbar-brand{
-		font-size: 28px;
-	}
-
-	.navbar .nav {
-		width: 100%; 
-	}
-
-	.navbar .nav li {
-		background: rgba(255, 255, 255, 0.3);
-	}
-
-	.navbar .nav li a {
-		color: white;
-		background: none;
-	}
-
-	.navbar .nav li a:hover {
-		color: white;
-		opacity: 1;
-		background: none;
-	}
+		.navbar-inner {
+			padding-top: 0;
+		}
+	
+		.navbar-default .navbar-brand{
+			font-size: 28px;
+		}
+	
+		.navbar .nav {
+			width: 100%; 
+		}
+	
+		.navbar .nav li {
+			background: rgba(255, 255, 255, 0.3);
+		}
+	
+		.navbar .nav li a {
+			color: white;
+			background: none;
+		}
+	
+		.navbar .nav li a:hover {
+			color: white;
+			opacity: 1;
+			background: none;
+		}
 
 	.headline {
-		font-size: 5em;
+		font-size: 4em;
+		margin-top: -10px;
 		text-align: center;
 		left: 0;
 		right: 0;
 	}
+	
+	.brasaSummer {
+		background:#013754  url(../img/brasasummer-mobile2.png) no-repeat top center;
+		background-size: 600px;
+		height: 100%;
+	}
+
+		.contentBrasaSummer {
+			padding-top: 350px;
+			text-align: center;
+			position: static;
+			margin-left: 0; 
+			top: 50%;
+			height: auto;
+			width: auto;
+		}
+
+	.brasa {
+		background: #00aeef url(../img/brasa-mobile2.png) no-repeat top center;
+		background-size: 600px;
+		height: auto;
+
+	}
+	
+		.contentBrasa {
+			padding-top: 350px;
+			text-align: center;
+			position: static;
+			margin-left: 0; 
+			top: 50%;
+			height: 60%;
+			width: 100%;
+		}
+	
+	.cells {
+		background: #fff url(../img/cells-mobile.jpg) no-repeat top center;
+		background-size: 600px;
+		height: auto;
+		}
+	
+		.contentCells {
+			padding-top: 350px;
+			text-align: center;
+			position: static;
+			margin-left: 0; 
+			top: 50%;
+			height: 60%;
+			width: 100%;
+		}
+		
 	.footer {
 		height: auto;
 		width: 100%;
-		padding: 180px;
 	}
 	
 	.footer li {
@@ -684,37 +766,6 @@ footer {
 		float: left;
 		margin: 30px 0 30px 0;
 		width: 33%;
-	}
-	
-	.brasa {
-		background: #00aeef url(../img/brasa-mobile.png) no-repeat top center;
-		background-size: 600px;
-		height: auto;
-
-	}
-	.contentBrasa {
-		padding-top: 350px;
-		text-align: center;
-		position: static;
-		margin-left: 0; 
-  		top: 50%;
-	  	height: auto;
-	 	width: 100%;
-  }
-  .cells {
-		background: #fff url(../img/cells-mobile.jpg) no-repeat top center;
-		background-size: 100%;
-		height: auto;
-
-	}
-	.contentCells {
-		padding-top: 300px;
-		text-align: center;
-		position: static;
-		margin-left: 0; 
-  		top: 50%;
-	  	height: auto;
-	 	width: 100%;
 	}	
 }
 
