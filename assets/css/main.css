@@ -237,7 +237,6 @@ span.hidden {
   	z-index: 10;
 }
 
-
 .feature h3 {
 	color: #fff;
 	font-weight: 100;
@@ -268,15 +267,121 @@ span.glyphicon-chevron-down {
 	width: 50px;
 }
 
+/* = AMKA  =============================================================== */
+
+.amka {
+    position: relative;
+    background: #fff   url(../img/amka.jpg) no-repeat right;
+    background-position: 170% -9%;
+    background-size: 768px;		
+    height: 100vh;
+    padding: 50px;
+    font-size: 1.3em;
+    z-index: 10;
+    
+    -webkit-box-shadow: -5px -2px 101px -8px rgba(0,0,0,0.37);
+    -moz-box-shadow: -5px -2px 101px -8px rgba(0,0,0,0.37);
+    box-shadow: -5px -2px 101px -8px rgba(0,0,0,0.37);
+}
+
+/*.amka:after {
+    content: "";
+    position: relative;
+    top: 93%;
+    left: -66px;
+    height: 15%;
+    width: 100vw;
+    background: #2d77bd;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+}*/
+
+.contentAmka{
+    text-align: left;
+    padding-top: 100px;
+    margin-left: -150px;
+    position: absolute;
+    top: 50%;
+    right: 50%;		
+
+}
+
+.amka h1 {
+    font-size: 38px;
+    color: #61b977;
+    font-weight: bolder;
+}
+
+.amka h3 {
+    color: #61b977;
+    font-weight: bolder;
+}
+
+
+.amka p {
+    line-height: 2em;
+    font-family: "Lato";
+    font-weight: 300;
+    color: #999;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 0.733em;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Lato";
+    color: #999;
+}
+
+span.glyphicon-chevron-right {
+    font-size: 0.733em;
+    padding: 23px 0 0 0;
+    font-weight: 100;
+}
+
+.amka .btn {
+    display: inline-block;
+    font-size: 0.733em;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Lato";
+    color: #61b977;
+}
+
+.amka .btn[hover] {
+    display: inline-block;
+    font-size: 0.733em;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Lato";
+    color: #61b977;
+}
+
+.amka .under {
+    color: #999;
+}
+.amka .year {
+    color: #999;
+    opacity: 0.66;
+}
+
+.amka .cta {
+    color: #999;
+    margin-left: -10px;
+}
+
+
 /* = Globo Mais  =============================================================== */
 
 .globoMais {
-	-webkit-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
-	box-shadow: 0px -36px 152px 48px rgba(0,0,0,0.3);
 	position: relative;
 	background: #2d77bd url(../img/hand-side.png) no-repeat right;
-	background-position: 100% 95%;
+	background-position: 100% 100%;
 	background-size: 768px;		
 	height: 100vh;
 	padding: 50px;
@@ -284,18 +389,18 @@ span.glyphicon-chevron-down {
 	z-index: 10;
 }
 
-.globoMais:after {
+/*.globoMais:after {
 	content: "";
 	position: relative;
-	top: 93%;
-	left: -66px;
+	top: 104%;
+	left: -64px;
 	height: 15%;
 	width: 100vw;
 	background: #013754;
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	transform: rotate(2deg);
-}
+}*/
 
 .contentGloboMais{
 	text-align: left;
@@ -357,18 +462,18 @@ span.glyphicon-chevron-right {
 	z-index: 10;
 }
 
-.brasaSummer:after {
+/*.brasaSummer:after {
 	content: "";
 	position: relative;
 	top: 98%;
-	left: -66px;
-	height: 15%;
+    left: -64px;
+    height: 15%;
 	width: 100vw;
 	background: #00aeef;
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	transform: rotate(2deg);
-}
+}*/
 
 .contentBrasaSummer{
 	text-align: left;
@@ -429,7 +534,7 @@ span.glyphicon-chevron-right {
 	z-index: 10;
 }
 
-.brasa:after {	
+/*.brasa:after {	
 	content: "";
 	position: relative;
 	top: 93%;
@@ -440,7 +545,7 @@ span.glyphicon-chevron-right {
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	transform: rotate(2deg);
-}
+}*/
 
 .contentBrasa{
 	text-align: left;
@@ -509,7 +614,7 @@ span.glyphicon-chevron-right {
 	right: 50%;		
 }
 
-.cells:after {
+/*.cells:after {
 	content: "";
 	position: relative;
 	top: 93%;
@@ -520,7 +625,7 @@ span.glyphicon-chevron-right {
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	transform: rotate(2deg);
-}
+}*/
 
 .contentCells span.under, .contentCells span.year {
 	color: #555;
@@ -697,7 +802,17 @@ footer {
 		right: 0;
 		margin-top: 50px;
 	}
-		
+    
+    .contentAmka {
+        text-align: left;
+        position: static;
+        margin-left: -10%; 
+        top: 50%;
+        height: 60%;
+        width: 100%;
+    }
+
+    
 	.contentBrasaSummer {
 		text-align: left;
 		position: static;
@@ -794,10 +909,27 @@ footer {
 		right: 0;
 	}
 	
+    .amka {
+        background:#fff url(../img/amka2.jpg) no-repeat top center;
+        background-size: 400px;
+        background-position: 50% -60%;
+        height: 100%;
+    }
+
+    .contentAmka {
+        padding-top: 350px;
+        text-align: center;
+        position: static;
+        margin-left: 0; 
+        top: 50%;
+        height: auto;
+        width: auto;
+    }
+    
 	.globoMais {
 		background:#2d77bd  url(../img/hand-mobile.png) no-repeat top center;
 		background-size: 500px;
-		background-position: 50% 12%;
+		background-position: 50% 2%;
 		height: 100%;
 	}
 
