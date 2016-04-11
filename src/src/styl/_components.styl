@@ -1,0 +1,158 @@
+.container
+    padding 0 10%
+    height 100vh
+    display flex
+    flex-direction column
+    text-align center
+    justify-content center
+    box-sizing border-box
+
+    @media (min-width: 768px)
+        padding 0 20%
+
+    &::before
+        content ''
+        height 100%
+        width 100%
+        position absolute
+        background-color black
+        top 0
+        left 0
+        opacity .2
+
+.wrapper
+
+    &.-heading
+        margin-top 25vh
+
+        @media only screen and (min-device-width : 400px) and (max-device-width : 1024px) and (orientation : landscape)
+            margin-top 15vh
+
+
+        @media (min-width: 760px)
+            margin-top 15vh
+
+    &.-headline
+        overflow hidden
+        margin-top -10px
+
+        @media only screen and (min-device-width : 400px) and (max-device-width : 1024px) and (orientation : landscape)
+            margin-top -20px
+
+    > .heading
+        width auto
+        margin: 0
+        opacity 0
+        animation fadeIn .8s cubic-bezier(0.77, 0, 0.175, 1) forwards
+
+        > .logo
+            width 100%
+            height auto
+
+    > .headline
+        padding 0
+        margin 0 10%
+        font-size 16px
+        font-family 'Open Sans', sans-serif
+        font-style italic
+        font-weight 300
+        color white
+        transform translateY(-150%)
+        animation showDown 1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards
+
+        @media (min-width: 768px)
+            margin -8px 0 0
+            font-size 28px
+
+        > .link
+            font-style italic
+            text-decoration none
+            color white
+
+.links
+    margin-left: -10vw
+    display flex
+    flex-direction row
+    justify-content center
+    flex-wrap wrap
+
+    @media only screen and (min-device-width : 400px) and (max-device-width : 1024px) and (orientation : landscape)
+        margin-top 0
+
+    @media (min-width: 768px)
+        margin 50px 0 0
+
+    .link-item
+        list-style none
+        opacity .5
+        padding 25px
+        transition opacity .3s
+        @media only screen and (min-device-width : 400px) and (max-device-width : 1024px) and (orientation : landscape)
+            padding 20px
+
+        @media (min-width: 320px)
+            padding 22px
+
+        @media (min-width: 400px)
+            padding 30px
+
+
+        @media (min-width: 768px)
+            padding 5px
+
+        &:hover
+            opacity 1
+
+    .social
+        height 32px
+        width 32px
+        background-size 28px
+        background-repeat no-repeat
+        background-position 50%
+        text-decoration none
+        color transparent
+        font-size 0
+        opacity 0
+        transition all .3s
+
+        @media (min-width: 320px)
+            padding 14px
+
+        @media (min-width: 400px)
+            padding 16px
+
+        @media (min-width: 768px)
+            padding: 20px
+
+        @media (min-width: 960px)
+            padding 20px 30px
+            background-size: 32px
+
+        &.-github
+            background-image url(../img/social/social_github.svg)
+            background-size: 30px
+            animation bounceIn 2s cubic-bezier(0.77, 0, 0.175, 1) 2s forwards
+
+        &.-behance
+            background-image url(../img/social/social_behance.svg)
+            background-size: 30px
+            animation bounceIn 2s cubic-bezier(0.77, 0, 0.175, 1) 2.2s forwards
+
+        &.-linkedin
+            background-image url(../img/social/social_linkedin.svg)
+            background-size: 22px
+            animation bounceIn 2s cubic-bezier(0.77, 0, 0.175, 1) 2.4s forwards
+
+        &.-medium
+            background-image url(../img/social/social_medium.svg)
+            background-size: 26px
+            animation bounceIn 2s cubic-bezier(0.77, 0, 0.175, 1) 2.6s forwards
+
+        &.-instagram
+            background-image url(../img/social/social_instagram.svg)
+            background-size: 26px
+            animation bounceIn 2s cubic-bezier(0.77, 0, 0.175, 1) 2.8s forwards
+
+        &.-twitter
+            background-image url(../img/social/social_twitter.svg)
+            animation bounceIn 2s cubic-bezier(0.77, 0, 0.175, 1) 3.0s forwards
