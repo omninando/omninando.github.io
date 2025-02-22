@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@import './components/hero.css';
+@import './components/header.css';
+
+@theme {
+  --font-serif:
+    ui-serif, 'Fraunces', 'Cormorant Garamond', Georgia, Cambria,
+    'Times New Roman', Times, serif;
+  --tracking-tight: -0.015em;
+  --color-1: #caf0f8;
+  --color-2: #90e0ef;
+  --color-3: #00b4d8;
+  --color-4: #0077b6;
+  --color-5: #03045e;
+}
+
+:root {
+  font-optical-sizing: auto;
+  background-color: var(--color-1);
+}

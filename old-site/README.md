@@ -3,6 +3,7 @@
 This projects uses ES6, Jade, Stylus, Gulp and Browsersync. The main objective of this boilerplate is to ensure Quality to our code with Code Standards and Hooks to prevent messy codes to be committed or pushed.
 
 Maybe you want to read about them:
+
 - [GulpJS](http://gulpjs.com/)
 - [Jade](http://jade-lang.com/)
 - [Stylus](http://learnboost.github.io/stylus/)
@@ -18,7 +19,6 @@ First of all, install the dependencies to run this boilerplate.
 
 - [NodeJS](http://nodejs.org/)
 - [GulpJS](http://gulpjs.com/)
-
 
 ```sh
 # Clone this repository
