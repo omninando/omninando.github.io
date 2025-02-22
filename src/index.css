@@ -6,6 +6,10 @@
   --font-serif:
     ui-serif, 'Fraunces', 'Cormorant Garamond', Georgia, Cambria,
     'Times New Roman', Times, serif;
+  --font-sans:
+    ui-sans-serif, 'Roboto', system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-montserrat: 'Montserrat', sans-serif;
   --tracking-tight: -0.015em;
   --color-1: #caf0f8;
   --color-2: #90e0ef;

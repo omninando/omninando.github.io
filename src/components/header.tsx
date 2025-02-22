@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header: React.FC = () => {
   return (
-    <header className="header flex justify-between p-4 md:p-8 text-2xl">
+    <header className="header flex justify-between p-4 md:p-8 uppercase font-medium text-2xl">
       <div className="logo">
         <a href="#home">Fernando Coelho</a>
       </div>

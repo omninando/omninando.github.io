@@ -1,3 +1,10 @@
-.header {
-  color: var(--color-5);
+.header a {
+  color: var(--color-3);
+  font-family: var(--font-montserrat);
+  transition: 0.2s;
+}
+
+.header a:hover {
+  color: var(--color-4);
+  transition: 0.2s;
 }
