@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import './components/hero.css';
 @import './components/header.css';
+@import './components/experience.css';
 
 @theme {
   --font-serif:
@@ -10,15 +11,37 @@
     'Roboto', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-montserrat: 'Montserrat', sans-serif;
-  --tracking-tight: -0.015em;
-  --color-1: #caf0f8;
-  --color-2: #90e0ef;
-  --color-3: #00b4d8;
-  --color-4: #0077b6;
-  --color-5: #03045e;
+  --font-league: 'League Script', serif;
+  --tracking-tight: -0.02em;
+  --color-1: #f0ebd8;
+  --color-2: #f96f5d;
+  --color-3: #c06e52;
+  --color-4: #43281c;
+  --color-5: #48392a;
 }
 
 :root {
   font-optical-sizing: auto;
   background-color: var(--color-1);
+}
+
+::selection {
+  background: var(--color-2);
+  color: var(--color-1);
+  text-shadow: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: fadeIn 1s cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
 }

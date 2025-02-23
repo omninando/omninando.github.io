@@ -1,10 +1,18 @@
-.header a {
+.navigation a {
   color: var(--color-3);
   font-family: var(--font-montserrat);
   transition: 0.2s;
 }
 
-.header a:hover {
+.navigation a:hover,
+.logo:hover {
   color: var(--color-4);
+  transition: 0.2s;
+}
+
+.logo {
+  color: var(--color-3);
+  font-family: var(--font-league);
+  font-weight: 900;
   transition: 0.2s;
 }

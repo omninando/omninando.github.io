@@ -1,11 +1,42 @@
 .hero {
   color: var(--color-4);
+  opacity: 0;
 }
 
 .name {
-  color: var(--color-4);
+  color: var(--color-5);
+}
+
+.link span {
+  display: inline-block;
+  color: var(--color-5);
+  transform: translateY(0);
+  transition: 0.2s;
 }
 
 .link {
-  color: var(--color-5);
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 8px;
+  left: 0;
+  background-color: var(--color-3);
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.link:hover span {
+  color: var(--color-3);
+  transform: translateY(-4px);
+  transition: 0.2s;
 }
