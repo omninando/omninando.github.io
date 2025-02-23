@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           >
             Email
           </a>
-          |
+          <span className="hidden md:flex">|</span>
           <a
             className="link"
             href="https://github.com/omninando"
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           >
             GitHub
           </a>
-          |
+          <span className="hidden md:flex">|</span>
           <a
             className="link"
             href="https://codepen.io/nandocoelho/"
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
           >
             Behance
           </a>
-          |
+          <span className="hidden md:flex">|</span>
           <a
             className="link"
             href="https://linkedin.com/in/nandocoelho"
