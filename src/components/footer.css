@@ -1,0 +1,15 @@
+.footer {
+  color: var(--color-3);
+  font-family: var(--font-montserrat);
+  transition: 0.2s;
+
+  & .link {
+    color: var(--color-3);
+    transition: 0.2s;
+
+    &:hover {
+      color: var(--color-4);
+      transition: 0.2s;
+    }
+  }
+}

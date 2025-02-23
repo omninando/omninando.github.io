@@ -2,6 +2,7 @@
 @import './components/hero.css';
 @import './components/header.css';
 @import './components/experience.css';
+@import './components/footer.css';
 
 @theme {
   --font-serif:
