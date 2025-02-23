@@ -44,7 +44,7 @@ const ExperienceList: React.FC = () => {
     })
   }
 
-  useIntersectionObserver(observerCallback, { threshold: 0.5 }, '.item')
+  useIntersectionObserver(observerCallback, { threshold: 0.5 }, '.slide-up')
 
   return (
     <section className="experience-list-wrapper w-full flex justify-center p-4 md:p-0 my-30">
@@ -54,11 +54,14 @@ const ExperienceList: React.FC = () => {
         </h2>
         <ul className="list">
           {experiences.map((experience, index) => (
-            <li key={index} className="item flex flex-col py-6 gap-2">
+            <li
+              key={index}
+              className="item flex flex-col py-6 gap-2 opacity-0 slide-up"
+            >
               <h3 className="role font-light font-serif italic text-4xl">
                 {experience.role}
               </h3>
-              <div className="flex gap-2">
+              <div className="flex gap-2 ">
                 <a
                   href={experience.link}
                   target="_blank"
@@ -75,10 +78,15 @@ const ExperienceList: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className="experience-list w-full flex justify-end py-4">
-          <button type="button" className="button border rounded-xl px-4 py-2">
+        <div className="experience-list w-full flex justify-end py-4 opacity-0 slide-up">
+          <a
+            href="https://www.linkedin.com/in/nandocoelho"
+            target="_blank"
+            rel="noreferrer"
+            className="button border rounded-xl px-4 py-2"
+          >
             View Full Resumé
-          </button>
+          </a>
         </div>
       </div>
     </section>

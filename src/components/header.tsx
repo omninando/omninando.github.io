@@ -7,7 +7,7 @@ const Header: React.FC = () => {
         <a href="/" aria-label="fernando coelho" className="logo text-6xl">
           FC
         </a>
-        <nav className="navigation">
+        {/* <nav className="navigation">
           <ul className="flex gap-4 uppercase">
             <li>
               <a href="#about">About</a>
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   )

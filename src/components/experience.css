@@ -4,7 +4,6 @@
 
 .item {
   border-bottom: 1px solid var(--color-4);
-  opacity: 0;
 }
 
 .item:first-child {

@@ -21,7 +21,12 @@ const Hero: React.FC = () => {
           Brazilian Frontend Engineer passionate about crafting meaningful
           interfaces. Based in Barcelona, I'm currently helping connect people
           through forms at{' '}
-          <a className="link" href="https://www.typeform.com">
+          <a
+            className="link"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.typeform.com"
+          >
             <span>Typeform</span>
           </a>
           .
