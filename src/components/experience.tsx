@@ -47,7 +47,7 @@ const ExperienceList: React.FC = () => {
   useIntersectionObserver(observerCallback, { threshold: 0.5 }, '.slide-up')
 
   return (
-    <section className="experience-list-wrapper w-full md:h-[100vh] flex justify-center align-center p-4 pb-20 md:p-0 md:pt-35">
+    <section className="experience-list-wrapper w-full flex justify-center align-center p-4 pb-20 md:p-0 md:pt-35">
       <div className="experience-list w-full md:max-w-[90%]">
         <h2 className="title uppercase font-medium font-sans text-xl pb-5">
           Experience
