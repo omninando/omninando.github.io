@@ -10,7 +10,7 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: 'Frontend Software Engineer',
+    role: 'Senior Frontend Engineer',
     company: 'Typeform',
     link: 'https://www.typeform.com',
     yearsWorked: '2022 — Present',
