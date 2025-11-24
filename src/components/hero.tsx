@@ -18,16 +18,16 @@ const Hero: React.FC = () => {
         <p className="message md:max-w-[80%] font-serif font-light text-4xl md:text-6xl tracking-[-2.1px] md:tracking-tight">
           Olá, I'm{' '}
           <span className="name italic font-medium">Fernando Coelho</span>, a
-          Brazilian Frontend Engineer passionate about crafting meaningful
-          interfaces. Based in Barcelona, I'm currently helping connect people
-          through forms at{' '}
+          Brazilian Design Systems Engineer passionate about crafting meaningful
+          interfaces. Based in Stockholm, I'm currently building the future of
+          Legal AI at{' '}
           <a
             className="link"
             target="_blank"
             rel="noreferrer"
-            href="https://www.typeform.com"
+            href="https://www.legora.com"
           >
-            <span>Typeform</span>
+            <span>Legora</span>
           </a>
           .
         </p>

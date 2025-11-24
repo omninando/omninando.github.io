@@ -10,10 +10,16 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    role: 'Design Systems Engineer',
+    company: 'Legora',
+    link: 'https://www.legora.com',
+    yearsWorked: '2025 — Present',
+  },
+  {
     role: 'Senior Frontend Engineer',
     company: 'Typeform',
     link: 'https://www.typeform.com',
-    yearsWorked: '2022 — Present',
+    yearsWorked: '2022 — 2025',
   },
   {
     role: 'Software Engineer - Javascript',
