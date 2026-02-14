@@ -21,6 +21,16 @@ const Hero: React.FC = () => {
     const splitIntoLines = () => {
       if (!messageRef.current) return
 
+      const getNodeText = (node: React.ReactNode): string => {
+        if (node == null || typeof node === 'boolean') return ''
+        if (typeof node === 'string' || typeof node === 'number') return String(node)
+        if (Array.isArray(node)) return node.map(getNodeText).join('')
+        if (React.isValidElement<{ children?: React.ReactNode }>(node)) {
+          return getNodeText(node.props.children)
+        }
+        return ''
+      }
+
       // Create a temporary container with the same styling to measure line breaks
       const tempContainer = document.createElement('p')
       tempContainer.className = messageRef.current.className
@@ -47,11 +57,19 @@ const Hero: React.FC = () => {
       ]
 
       // Split text into words while preserving React elements
-      const items: (string | React.ReactElement)[] = []
-      content.forEach(item => {
-        if (typeof item === 'string') {
-          items.push(...item.split(' ').map((word, i, arr) => i < arr.length - 1 ? word + ' ' : word))
-        } else {
+      const items: React.ReactNode[] = []
+      content.forEach((item) => {
+        if (typeof item === 'string' || typeof item === 'number') {
+          const text = String(item)
+          items.push(
+            ...text
+              .split(' ')
+              .map((word, i, arr) => (i < arr.length - 1 ? word + ' ' : word))
+          )
+          return
+        }
+
+        if (React.isValidElement(item)) {
           items.push(item)
         }
       })
@@ -61,14 +79,13 @@ const Hero: React.FC = () => {
       let currentHeight = 0
 
       items.forEach((item, index) => {
-        const testElement = typeof item === 'string' ?
-          document.createTextNode(item) :
-          tempContainer.appendChild(document.createElement('span'))
-
-        if (typeof item !== 'string') {
-          testElement.textContent = item.props.children?.props?.children || item.props.children || ''
+        if (typeof item === 'string' || typeof item === 'number') {
+          tempContainer.appendChild(document.createTextNode(String(item)))
+        } else if (React.isValidElement(item)) {
+          const span = tempContainer.appendChild(document.createElement('span'))
+          span.textContent = getNodeText(item)
         } else {
-          tempContainer.appendChild(testElement)
+          return
         }
 
         const newHeight = tempContainer.offsetHeight
@@ -80,7 +97,9 @@ const Hero: React.FC = () => {
         }
 
         lineBreaks[currentLine].push(
-          typeof item === 'string' ? item : React.cloneElement(item, { key: `element-${index}` })
+          React.isValidElement(item)
+            ? React.cloneElement(item, { key: `element-${index}` })
+            : String(item)
         )
       })
 
@@ -98,7 +117,7 @@ const Hero: React.FC = () => {
       <div className="hero-content w-full md:max-w-[90%] h-[100vh] flex flex-col justify-center">
         <p
           ref={messageRef}
-          className="message md:max-w-[80%] font-serif font-light text-4xl md:text-6xl tracking-[-2.1px] md:tracking-tight"
+          className="message w-full max-w-[65ch] font-serif font-light text-[clamp(2rem,4.2vw,3.75rem)] leading-[1.05] tracking-[-2.1px] md:tracking-tight"
         >
           {lines.length > 0 ? (
             lines.map((line, lineIndex) => (
