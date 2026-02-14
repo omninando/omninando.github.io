@@ -1,0 +1,7 @@
+packages:
+  - '.'
+
+# pnpm v10+ may block install scripts by default.
+# Allow build scripts for required tooling (e.g. esbuild used by Vite).
+onlyBuiltDependencies:
+  - esbuild

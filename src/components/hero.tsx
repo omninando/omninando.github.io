@@ -43,17 +43,18 @@ const Hero: React.FC = () => {
       const content = [
         'Olá, I\'m ',
         <span key="name" className="name italic font-medium">Fernando Coelho</span>,
-        ', a Brazilian Design Systems Engineer passionate about crafting meaningful interfaces. Based in Stockholm, I\'m currently building the future of Legal AI at ',
-        <a
-          key="link"
-          className="link"
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.legora.com"
-        >
-          <span>Legora</span>
-        </a>,
-        '.'
+        ', a Brazilian Design\u00A0Systems\u00A0Engineer passionate about crafting meaningful interfaces. Based in Stockholm, I\'m currently building the future of Legal AI at ',
+        <span key="legora" className="whitespace-nowrap">
+          <a
+            className="link"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.legora.com"
+          >
+            <span>Legora</span>
+          </a>
+          .
+        </span>,
       ]
 
       // Split text into words while preserving React elements
@@ -114,7 +115,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="hero flex justify-center align-center w-full h-full p-4 md:p-0">
-      <div className="hero-content w-full md:max-w-[90%] h-[100vh] flex flex-col justify-center">
+      <div className="hero-content w-full md:max-w-[90%] h-screen flex flex-col justify-center">
         <p
           ref={messageRef}
           className="message w-full max-w-[65ch] font-serif font-light text-[clamp(2rem,4.2vw,3.75rem)] leading-[1.05] tracking-[-2.1px] md:tracking-tight"
@@ -136,18 +137,20 @@ const Hero: React.FC = () => {
             <>
               Olá, I'm{' '}
               <span className="name italic font-medium">Fernando Coelho</span>, a
-              Brazilian Design Systems Engineer passionate about crafting meaningful
-              interfaces. Based in Stockholm, I'm currently building the future of
-              Legal AI at{' '}
-              <a
-                className="link"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.legora.com"
-              >
-                <span>Legora</span>
-              </a>
-              .
+              Brazilian {'Design\u00A0Systems\u00A0Engineer'} passionate about
+              crafting meaningful interfaces. Based in Stockholm, I'm currently
+              building the future of Legal AI at{' '}
+              <span className="whitespace-nowrap">
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.legora.com"
+                >
+                  <span>Legora</span>
+                </a>
+                .
+              </span>
             </>
           )}
         </p>
