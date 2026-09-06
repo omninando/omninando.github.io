@@ -14,6 +14,7 @@
   color: var(--color-3);
   font-family: var(--font-league);
   font-weight: 900;
+  line-height: 1.4;
   -webkit-font-smoothing: subpixel-antialiased;
   transition: 0.2s;
 }
