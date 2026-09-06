@@ -1,0 +1,11 @@
+{
+  "name": "omninando",
+  "install": "pnpm install --frozen-lockfile",
+  "terminals": [
+    {
+      "name": "vite-dev",
+      "command": "pnpm dev --host"
+    }
+  ],
+  "ports": [5173]
+}
