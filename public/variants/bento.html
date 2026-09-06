@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fernando Coelho — Bento Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=League+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-1: #f0ebd8;
+        --color-2: #f96f5d;
+        --color-3: #c06e52;
+        --color-4: #43281c;
+        --color-5: #48392a;
+        --card: #f6f2e4;
+        --font-serif: 'Fraunces', Georgia, serif;
+        --font-sans: 'Roboto', system-ui, sans-serif;
+        --font-mont: 'Montserrat', sans-serif;
+        --font-league: 'League Script', serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--color-1);
+        color: var(--color-4);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      ::selection {
+        background: var(--color-2);
+        color: var(--color-1);
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* ---------- Header ---------- */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: color-mix(in srgb, var(--color-1) 88%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid color-mix(in srgb, var(--color-4) 12%, transparent);
+      }
+
+      .topbar .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-family: var(--font-league);
+        font-weight: 900;
+        font-size: 2.8rem;
+        line-height: 1.4;
+        color: var(--color-3);
+        text-decoration: none;
+      }
+
+      .topnav {
+        display: flex;
+        gap: 1.4rem;
+        font-family: var(--font-mont);
+        font-size: 0.82rem;
+        font-weight: 500;
+      }
+
+      .topnav a {
+        color: var(--color-3);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .topnav a:hover {
+        color: var(--color-4);
+      }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        padding: 5rem 0 3.5rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 860px) {
+        .hero {
+          grid-template-columns: 1.6fr 1fr;
+          align-items: end;
+        }
+      }
+
+      .hero .eyebrow {
+        font-family: var(--font-mont);
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--color-3);
+        margin-bottom: 1.25rem;
+      }
+
+      .hero h1 {
+        font-family: var(--font-serif);
+        font-weight: 300;
+        font-optical-sizing: auto;
+        font-size: clamp(1.9rem, 4vw, 3.4rem);
+        line-height: 1.16;
+        letter-spacing: -0.015em;
+        max-width: 22ch;
+      }
+
+      .hero .name {
+        font-style: italic;
+        color: var(--color-5);
+      }
+
+      .hero .link {
+        color: var(--color-5);
+        text-decoration: none;
+        box-shadow: inset 0 -0.08em 0 var(--color-3);
+        transition: color 0.2s;
+      }
+
+      .hero .link:hover {
+        color: var(--color-3);
+      }
+
+      .hero .aside-card {
+        background: var(--color-5);
+        color: var(--color-1);
+        border-radius: 1.25rem;
+        padding: 1.75rem;
+      }
+
+      .hero .aside-card .k {
+        font-family: var(--font-mont);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.66rem;
+        opacity: 0.7;
+      }
+
+      .hero .aside-card .v {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin: 0.15rem 0 1.1rem;
+      }
+
+      .hero .aside-card .v:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ---------- Experience grid ---------- */
+      .xp-section {
+        padding: 1.5rem 0 4rem;
+      }
+
+      .xp-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+      }
+
+      .xp-head h2 {
+        font-family: var(--font-mont);
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--color-3);
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 980px) {
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid color-mix(in srgb, var(--color-4) 12%, transparent);
+        border-radius: 1.1rem;
+        padding: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card::before {
+        content: '';
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 4px;
+        background: var(--color-2);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px -18px var(--color-4);
+      }
+
+      .card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .card .years {
+        font-family: var(--font-mont);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        color: var(--color-3);
+        margin-bottom: 0.9rem;
+      }
+
+      .card .role {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-weight: 300;
+        font-size: 1.7rem;
+        line-height: 1.12;
+        color: var(--color-4);
+        margin-bottom: 0.6rem;
+      }
+
+      .card .company {
+        font-family: var(--font-mont);
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-3);
+        text-decoration: none;
+      }
+
+      .card .company:hover {
+        color: var(--color-4);
+      }
+
+      .cta-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        background: transparent;
+        border-style: dashed;
+      }
+
+      .cta-card p {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-weight: 300;
+        font-size: 1.4rem;
+        color: var(--color-4);
+      }
+
+      .btn {
+        font-family: var(--font-mont);
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-1);
+        background: var(--color-5);
+        border: 1px solid var(--color-5);
+        border-radius: 0.75rem;
+        padding: 0.7rem 1.3rem;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        background: transparent;
+        color: var(--color-5);
+      }
+
+      /* ---------- Footer ---------- */
+      .foot {
+        border-top: 1px solid color-mix(in srgb, var(--color-4) 12%, transparent);
+      }
+
+      .foot .inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1.5rem 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: var(--font-mont);
+        font-size: 0.82rem;
+      }
+
+      .foot .copy {
+        color: var(--color-3);
+      }
+
+      .foot .social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+      }
+
+      .foot .social a {
+        color: var(--color-3);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .foot .social a:hover {
+        color: var(--color-4);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        animation: rise 0.7s cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+      }
+
+      @keyframes rise {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="inner">
+        <a class="logo" href="/">FC</a>
+        <nav class="topnav">
+          <a href="#work">Work</a>
+          <a href="mailto:nandoacoelho@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/nandocoelho">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div class="reveal">
+          <p class="eyebrow">Design Systems Engineer · Stockholm</p>
+          <h1>
+            Olá, I'm <span class="name">Fernando&nbsp;Coelho</span>, a Brazilian
+            engineer passionate about crafting meaningful interfaces — building
+            the future of Legal AI at
+            <a class="link" href="https://www.legora.com" target="_blank" rel="noreferrer">Legora</a>.
+          </h1>
+        </div>
+        <div class="aside-card reveal" style="animation-delay: 0.15s">
+          <p class="k">Currently</p>
+          <p class="v">Legora, Stockholm</p>
+          <p class="k">Focus</p>
+          <p class="v">Design Systems &amp; Frontend</p>
+        </div>
+      </section>
+
+      <section class="xp-section" id="work">
+        <div class="xp-head">
+          <h2>Experience</h2>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <p class="years">2025 — Present</p>
+            <p class="role">Design Systems Engineer</p>
+            <a class="company" href="https://www.legora.com">Legora</a>
+          </article>
+          <article class="card reveal" style="animation-delay: 0.05s">
+            <p class="years">2022 — 2025</p>
+            <p class="role">Senior Frontend Engineer</p>
+            <a class="company" href="https://www.typeform.com">Typeform</a>
+          </article>
+          <article class="card reveal" style="animation-delay: 0.1s">
+            <p class="years">2020 — 2022</p>
+            <p class="role">Software Engineer — Javascript</p>
+            <a class="company" href="https://www.klarna.com">Klarna</a>
+          </article>
+          <article class="card reveal" style="animation-delay: 0.15s">
+            <p class="years">2017 — 2020</p>
+            <p class="role">Frontend Developer</p>
+            <a class="company" href="https://www.vtex.com">VTEX</a>
+          </article>
+          <article class="card reveal" style="animation-delay: 0.2s">
+            <p class="years">2015 — 2017</p>
+            <p class="role">Web Engineer</p>
+            <a class="company" href="https://www.hugeinc.com">Huge inc.</a>
+          </article>
+          <article class="card cta-card reveal" style="animation-delay: 0.25s">
+            <p>Want the full story?</p>
+            <a class="btn" href="https://linkedin.com/in/nandocoelho" target="_blank" rel="noreferrer">View Full Resumé</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="inner">
+        <p class="copy">© Fernando Coelho 2025</p>
+        <div class="social">
+          <a href="mailto:nandoacoelho@gmail.com">Email</a>
+          <a href="https://github.com/omninando">GitHub</a>
+          <a href="https://codepen.io/nandocoelho/">CodePen</a>
+          <a href="https://www.behance.net/nandocoelho/">Behance</a>
+          <a href="https://linkedin.com/in/nandocoelho">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

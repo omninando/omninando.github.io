@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fernando Coelho — Editorial Split</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=League+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-1: #f0ebd8;
+        --color-2: #f96f5d;
+        --color-3: #c06e52;
+        --color-4: #43281c;
+        --color-5: #48392a;
+        --font-serif: 'Fraunces', Georgia, serif;
+        --font-sans: 'Roboto', system-ui, sans-serif;
+        --font-mont: 'Montserrat', sans-serif;
+        --font-league: 'League Script', serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--color-1);
+        color: var(--color-4);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      ::selection {
+        background: var(--color-2);
+        color: var(--color-1);
+      }
+
+      .shell {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1400px;
+        margin: 0 auto;
+        min-height: 100vh;
+      }
+
+      @media (min-width: 900px) {
+        .shell {
+          grid-template-columns: 38% 62%;
+        }
+      }
+
+      /* ---------- Sidebar ---------- */
+      .aside {
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 900px) {
+        .aside {
+          position: sticky;
+          top: 0;
+          height: 100vh;
+          padding: 4vw 3vw;
+          border-right: 1px solid color-mix(in srgb, var(--color-4) 18%, transparent);
+        }
+      }
+
+      .logo {
+        font-family: var(--font-league);
+        font-weight: 900;
+        font-size: 3.5rem;
+        line-height: 1.4;
+        color: var(--color-3);
+        text-decoration: none;
+      }
+
+      .aside-name {
+        margin-top: auto;
+        font-family: var(--font-serif);
+        font-weight: 300;
+        font-optical-sizing: auto;
+        font-size: clamp(2.75rem, 6vw, 5rem);
+        line-height: 0.98;
+        letter-spacing: -0.02em;
+        color: var(--color-4);
+        padding-top: 3rem;
+      }
+
+      .aside-role {
+        font-family: var(--font-mont);
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--color-3);
+        margin-top: 1.25rem;
+      }
+
+      .aside-social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        margin-top: 2rem;
+        font-family: var(--font-mont);
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      .aside-social a {
+        color: var(--color-3);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .aside-social a:hover {
+        color: var(--color-4);
+      }
+
+      /* ---------- Main ---------- */
+      .main {
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      @media (min-width: 900px) {
+        .main {
+          padding: 4vw 3vw;
+        }
+      }
+
+      .intro {
+        font-family: var(--font-serif);
+        font-weight: 300;
+        font-optical-sizing: auto;
+        font-size: clamp(1.6rem, 2.9vw, 2.9rem);
+        line-height: 1.18;
+        letter-spacing: -0.01em;
+        max-width: 24ch;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .intro .name {
+        font-style: italic;
+        color: var(--color-5);
+      }
+
+      .intro .link {
+        color: var(--color-5);
+        text-decoration: none;
+        box-shadow: inset 0 -0.08em 0 var(--color-3);
+        transition: color 0.2s;
+      }
+
+      .intro .link:hover {
+        color: var(--color-3);
+      }
+
+      .section-label {
+        font-family: var(--font-mont);
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--color-3);
+        margin: 3rem 0 0.5rem;
+      }
+
+      .xp {
+        list-style: none;
+        border-top: 2px solid var(--color-4);
+      }
+
+      .xp li {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem 1.5rem;
+        padding: 1.4rem 0;
+        border-bottom: 1px solid color-mix(in srgb, var(--color-4) 30%, transparent);
+      }
+
+      .xp .role {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-weight: 300;
+        font-size: clamp(1.5rem, 3vw, 2.4rem);
+        color: var(--color-4);
+      }
+
+      .xp .meta {
+        display: flex;
+        gap: 0.6rem;
+        font-size: 1rem;
+        color: var(--color-5);
+        white-space: nowrap;
+      }
+
+      .xp .meta a {
+        color: var(--color-3);
+        text-decoration: none;
+      }
+
+      .xp .meta a:hover {
+        color: var(--color-4);
+      }
+
+      .cta-row {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+      }
+
+      .btn {
+        font-family: var(--font-mont);
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-1);
+        background: var(--color-5);
+        border: 1px solid var(--color-5);
+        border-radius: 0.75rem;
+        padding: 0.7rem 1.3rem;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        background: transparent;
+        color: var(--color-5);
+      }
+
+      .foot {
+        margin-top: 3rem;
+        font-family: var(--font-mont);
+        font-size: 0.8rem;
+        color: var(--color-3);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        animation: rise 0.7s cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+      }
+
+      @keyframes rise {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="aside">
+        <a class="logo" href="/">FC</a>
+        <h1 class="aside-name reveal">Fernando<br />Coelho</h1>
+        <p class="aside-role reveal" style="animation-delay: 0.1s">
+          Design Systems Engineer
+        </p>
+        <nav class="aside-social reveal" style="animation-delay: 0.2s">
+          <a href="mailto:nandoacoelho@gmail.com">Email</a>
+          <a href="https://github.com/omninando">GitHub</a>
+          <a href="https://codepen.io/nandocoelho/">CodePen</a>
+          <a href="https://www.behance.net/nandocoelho/">Behance</a>
+          <a href="https://linkedin.com/in/nandocoelho">LinkedIn</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <p class="intro reveal" style="animation-delay: 0.15s">
+          Olá, I'm <span class="name">Fernando&nbsp;Coelho</span>, a Brazilian
+          Design&nbsp;Systems&nbsp;Engineer passionate about crafting meaningful
+          interfaces. Based in Stockholm, I'm currently building the future of
+          Legal AI at
+          <a class="link" href="https://www.legora.com" target="_blank" rel="noreferrer">Legora</a>.
+        </p>
+
+        <p class="section-label">Experience</p>
+        <ul class="xp">
+          <li>
+            <span class="role">Design Systems Engineer</span>
+            <span class="meta"><a href="https://www.legora.com">Legora</a> · 2025 — Present</span>
+          </li>
+          <li>
+            <span class="role">Senior Frontend Engineer</span>
+            <span class="meta"><a href="https://www.typeform.com">Typeform</a> · 2022 — 2025</span>
+          </li>
+          <li>
+            <span class="role">Software Engineer — Javascript</span>
+            <span class="meta"><a href="https://www.klarna.com">Klarna</a> · 2020 — 2022</span>
+          </li>
+          <li>
+            <span class="role">Frontend Developer</span>
+            <span class="meta"><a href="https://www.vtex.com">VTEX</a> · 2017 — 2020</span>
+          </li>
+          <li>
+            <span class="role">Web Engineer</span>
+            <span class="meta"><a href="https://www.hugeinc.com">Huge inc.</a> · 2015 — 2017</span>
+          </li>
+        </ul>
+
+        <div class="cta-row">
+          <a class="btn" href="https://linkedin.com/in/nandocoelho" target="_blank" rel="noreferrer">View Full Resumé</a>
+        </div>
+
+        <p class="foot">© Fernando Coelho 2025</p>
+      </main>
+    </div>
+  </body>
+</html>
